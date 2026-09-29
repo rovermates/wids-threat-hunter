@@ -1,0 +1,154 @@
+{
+  "ensemble": {
+    "rows": 59909,
+    "positive_rows": 1467,
+    "precision": 0.9747508305647841,
+    "recall": 1.0,
+    "f1": 0.9872139973082099,
+    "pr_auc_trapezoid": 0.9999100573058988,
+    "average_precision": 0.9999102215792476,
+    "confusion_matrix_tn_fp_fn_tp": [
+      58404,
+      38,
+      0,
+      1467
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.9747508305647841,
+        "recall": 1.0,
+        "f1": 0.9872139973082099,
+        "pr_auc_trapezoid": 0.9999100573058988,
+        "average_precision": 0.9999102215792476,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58404,
+          38,
+          0,
+          1467
+        ]
+      },
+      "seconds_median": 0.22627439995994791,
+      "timing_repetitions": [
+        0.2297460000263527,
+        0.22627439995994791,
+        0.22193599998718128
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 57843,
+          "predicted_rogue": 38
+        },
+        "beacon": {
+          "rows": 599,
+          "predicted_rogue": 0
+        },
+        "evil_twin": {
+          "rows": 611,
+          "predicted_rogue": 611
+        },
+        "cafe_latte": {
+          "rows": 379,
+          "predicted_rogue": 379
+        },
+        "hirte": {
+          "rows": 477,
+          "predicted_rogue": 477
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.9951956074124915,
+        "recall": 0.9884117246080436,
+        "f1": 0.9917920656634747,
+        "pr_auc_trapezoid": 0.9985233290112369,
+        "average_precision": 0.998524210932667,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58435,
+          7,
+          17,
+          1450
+        ]
+      },
+      "seconds_median": 0.22875559999374673,
+      "timing_repetitions": [
+        0.22994190000463277,
+        0.22488749999320135,
+        0.22875559999374673
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 57843,
+          "predicted_rogue": 7
+        },
+        "beacon": {
+          "rows": 599,
+          "predicted_rogue": 0
+        },
+        "evil_twin": {
+          "rows": 611,
+          "predicted_rogue": 601
+        },
+        "cafe_latte": {
+          "rows": 379,
+          "predicted_rogue": 372
+        },
+        "hirte": {
+          "rows": 477,
+          "predicted_rogue": 477
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 575643,
+  "excluded_rows": 515734,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "b68790b655672ab381457ce3840ff43b6d2625c6095d2348a2dbd018b77fc1a0",
+  "evaluation_source": "AWID2 consumed-test diagnostic",
+  "evaluation_note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data/processed/detection_test.joblib",
+    "source_sha256": "d9ad4b61ac9a8fbc5151a3e4ec22ece7611b92b04a44be53e2473c6b2d9348da",
+    "mode": "awid-test",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "test": {
+        "normal": 530785,
+        "hirte": 19089,
+        "arp": 13644,
+        "deauthentication": 4445,
+        "chop_chop": 2871,
+        "cts": 1759,
+        "evil_twin": 611,
+        "beacon": 599,
+        "amok": 477,
+        "cafe_latte": 379,
+        "probe_request": 369,
+        "rts": 199,
+        "fragmentation": 167,
+        "power_saving": 165,
+        "disassociation": 84
+      }
+    }
+  }
+}

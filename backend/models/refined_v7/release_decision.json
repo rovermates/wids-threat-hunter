@@ -1,0 +1,172 @@
+{
+  "deployment": "Rejected; precision-heavy candidate increased missed targets",
+  "production_quality_certified": false,
+  "artifact_sha256": "b38e6664309959587c4fd9d1084b14a4c77b78f99a09ba27673becca2d6ca8f2",
+  "regressions": [
+    "RogueAP blocked capture: missed targets increased from 79 to 237.",
+    "AWID advertising diagnostic: missed targets increased from 0 to 33.",
+    "Earlier WPA3 evil-twin capture: missed targets increased from 0 to 1."
+  ],
+  "comparison": {
+    "new_rogue": {
+      "original_v7": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7228017883755589,
+        "recall": 0.8599290780141844,
+        "f1": 0.7854251012145749,
+        "pr_auc_trapezoid": 0.9002383223683341,
+        "average_precision": 0.9003203042028805,
+        "confusion_matrix_tn_fp_fn_tp": [
+          193,
+          186,
+          79,
+          485
+        ]
+      },
+      "refined_v7": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.9058171745152355,
+        "recall": 0.5797872340425532,
+        "f1": 0.707027027027027,
+        "pr_auc_trapezoid": 0.9014959122023608,
+        "average_precision": 0.9015867684100849,
+        "confusion_matrix_tn_fp_fn_tp": [
+          345,
+          34,
+          237,
+          327
+        ]
+      }
+    },
+    "new_beacon": {
+      "original_v7": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2498,
+          1,
+          0,
+          0
+        ]
+      },
+      "refined_v7": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2499,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "awid_diagnostic": {
+      "original_v7": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.9747508305647841,
+        "recall": 1.0,
+        "f1": 0.9872139973082099,
+        "pr_auc_trapezoid": 0.9999100573058988,
+        "average_precision": 0.9999102215792476,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58404,
+          38,
+          0,
+          1467
+        ]
+      },
+      "refined_v7": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.9951422623178349,
+        "recall": 0.9775051124744376,
+        "f1": 0.9862448418156808,
+        "pr_auc_trapezoid": 0.9991957515164951,
+        "average_precision": 0.9991960918732243,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58435,
+          7,
+          33,
+          1434
+        ]
+      }
+    },
+    "test_metrics": {
+      "original_v7": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 0.9981060606060606,
+        "recall": 1.0,
+        "f1": 0.9990521327014218,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1128,
+          1,
+          0,
+          527
+        ]
+      },
+      "refined_v7": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 1.0,
+        "recall": 0.9981024667931688,
+        "f1": 0.9990503323836657,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1129,
+          0,
+          1,
+          526
+        ]
+      }
+    },
+    "negative_control": {
+      "original_v7": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          7247,
+          1283,
+          0,
+          0
+        ]
+      },
+      "refined_v7": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          8530,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+}

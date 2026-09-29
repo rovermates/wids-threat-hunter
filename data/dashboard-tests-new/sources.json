@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Network_Join_Nokia_Mobile.pcap",
+    "source": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/Network_Join_Nokia_Mobile.pcap",
+    "sha256": "8c65e7a88d1daff9672f5d15ef3365f1360efbfc631953d75da895ac87e5cd5c",
+    "bytes": 164976,
+    "ground_truth": "No rogue-AP ground truth supplied; functional test only",
+    "previously_used": false
+  },
+  {
+    "name": "wpa-Induction.pcap",
+    "source": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/wpa-Induction.pcap",
+    "sha256": "2b57dca7fa2c3bd0e942060b546028d961bfb698fb12ed8b2947b13f88d170c8",
+    "bytes": 179298,
+    "ground_truth": "No rogue-AP ground truth supplied; functional test only",
+    "previously_used": false
+  },
+  {
+    "name": "mesh.pcap",
+    "source": "https://wiki.wireshark.org/uploads/__moin_import__/attachments/SampleCaptures/mesh.pcap",
+    "sha256": "fc5e5aaf9830436354d97ce91251a050cd814f53d5025175bf44a728fae398d0",
+    "bytes": 131179,
+    "ground_truth": "No rogue-AP ground truth supplied; functional test only",
+    "previously_used": false
+  },
+  {
+    "name": "synthetic-ssid-impersonation.pcap",
+    "source": "Offline synthetic scenario created for this test; no packets transmitted",
+    "sha256": "c6dddd965048a9b004bbf9e68def0c2a59b03b78be583f4a8899fb35e9d87407",
+    "bytes": 89024,
+    "ground_truth": "Constructed legitimate BSSID 02:aa:00:00:00:01 and impersonator 02:aa:00:00:00:02; synthetic behavior only, not validated real-world attack",
+    "previously_used": false
+  }
+]

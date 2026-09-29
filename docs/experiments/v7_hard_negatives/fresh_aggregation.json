@@ -1,0 +1,107 @@
+{
+  "ensemble": {
+    "rows": 11221,
+    "positive_rows": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc_trapezoid": null,
+    "average_precision": null,
+    "confusion_matrix_tn_fp_fn_tp": [
+      10783,
+      438,
+      0,
+      0
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 11221,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          10783,
+          438,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.41378840000834316,
+      "timing_repetitions": [
+        0.43784829997457564,
+        0.41378840000834316,
+        0.40347019996261224
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 11221,
+          "predicted_rogue": 438
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 11221,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          10448,
+          773,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.39499889995204285,
+      "timing_repetitions": [
+        0.3722214000299573,
+        0.39499889995204285,
+        0.4046206999919377
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 11221,
+          "predicted_rogue": 773
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 11221,
+  "excluded_rows": 0,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "8e76d182a3a22efddea1508c0203e72a190657ba0ee0205b8f2d5e777d4030be",
+  "evaluation_source": "New complete aggregation capture, first evaluation after candidate freeze; same publisher testbed",
+  "evaluation_note": "Publisher labels; see dataset audit and split limitations.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data\\raw\\wpa3\\Aggreattack.pcap",
+    "source_sha256": "ac47d2ecea530e548e26e49ef0e61085e1eeb47c804a265ec31981b7eb91ff15",
+    "label_sha256": "5688553dfaab83205e823ee8e1aa28117fdf43ffd78cd6c96f40ebfb07617ae9",
+    "role": "fresh_control",
+    "label_counts": {
+      "test": {
+        "normal": 11221
+      }
+    },
+    "target_interpretation": "Publisher disassociation/aggregation scenario labels are non-RAP classes; not independently verified physical AP identities."
+  }
+}

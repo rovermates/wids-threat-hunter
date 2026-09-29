@@ -1,0 +1,133 @@
+{
+  "ensemble": {
+    "rows": 1656,
+    "positive_rows": 527,
+    "precision": 0.9981060606060606,
+    "recall": 1.0,
+    "f1": 0.9990521327014218,
+    "pr_auc_trapezoid": 0.9997751542610125,
+    "average_precision": 0.9997754736432364,
+    "confusion_matrix_tn_fp_fn_tp": [
+      1128,
+      1,
+      0,
+      527
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 0.9981060606060606,
+        "recall": 1.0,
+        "f1": 0.9990521327014218,
+        "pr_auc_trapezoid": 0.9997751542610125,
+        "average_precision": 0.9997754736432364,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1128,
+          1,
+          0,
+          527
+        ]
+      },
+      "seconds_median": 0.11022949998732656,
+      "timing_repetitions": [
+        0.11183240002719685,
+        0.11022949998732656,
+        0.10739349998766556
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1129,
+          "predicted_rogue": 1
+        },
+        "evil_twin": {
+          "rows": 527,
+          "predicted_rogue": 527
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 0.9981060606060606,
+        "recall": 1.0,
+        "f1": 0.9990521327014218,
+        "pr_auc_trapezoid": 0.9997751542610125,
+        "average_precision": 0.9997754736432364,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1128,
+          1,
+          0,
+          527
+        ]
+      },
+      "seconds_median": 0.0934957999852486,
+      "timing_repetitions": [
+        0.08943910000380129,
+        0.09569980000378564,
+        0.0934957999852486
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1129,
+          "predicted_rogue": 1
+        },
+        "evil_twin": {
+          "rows": 527,
+          "predicted_rogue": 527
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 1656,
+  "excluded_rows": 0,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "8e76d182a3a22efddea1508c0203e72a190657ba0ee0205b8f2d5e777d4030be",
+  "evaluation_source": "behavior_wpa3_holdout: consumed regression; excluded from fitting",
+  "evaluation_note": "Adaptive regression check on previously inspected captures. Not independent generalization evidence.",
+  "test_used_for_selection": true,
+  "data_metadata": {
+    "source": "data/raw/wpa3/evilTwin.pcap",
+    "source_sha256": "11807b431cce6b5087b8bf9890f99660323f242f5dabc843401826812798e632",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 292413,
+        "evil_twin": 3957
+      },
+      "validation": {
+        "normal": 104429,
+        "evil_twin": 7447
+      },
+      "test": {
+        "normal": 96148,
+        "evil_twin": 527
+      }
+    },
+    "csv_sha256": "578ba6240cc8d4aae57454ff3a43b9cf54e55912ee4bfa76cbbd0a3c062725b0",
+    "feature_version": "advertisement-only-v1",
+    "source_cache": "behavior_wpa3_holdout",
+    "short_windows": [
+      5,
+      20
+    ],
+    "gap_reset_ns": 5000000000
+  }
+}

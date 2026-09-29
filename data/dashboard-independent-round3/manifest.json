@@ -1,0 +1,72 @@
+[
+  {
+    "file": "http_PPI.pcap",
+    "source": "data\\raw\\independent_wifi\\http_PPI.pcap",
+    "sha256": "4fc3ed1a0afefe504fb3005a86932f0cd84cd5246018c8bf12a8dc66862ca0db",
+    "expected_current_v7": {
+      "total_packets": 140,
+      "evaluated_packets": 0,
+      "flagged_packets": 0,
+      "detected_rogue_aps": 0,
+      "threat_level": "unknown"
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+    "ground_truth": "Not established; these are compatibility observations, not detection accuracy."
+  },
+  {
+    "file": "wpa-eap-tls.pcap",
+    "source": "data\\raw\\independent_wifi\\wpa-eap-tls.pcap",
+    "sha256": "520f7fb1cdab6da4b2debb0f64329d3154227015453ab5d78883e32e72e1f629",
+    "expected_current_v7": {
+      "total_packets": 86,
+      "evaluated_packets": 0,
+      "flagged_packets": 0,
+      "detected_rogue_aps": 0,
+      "threat_level": "unknown"
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+    "ground_truth": "Not established; these are compatibility observations, not detection accuracy."
+  },
+  {
+    "file": "wpa2-linkup.pcap",
+    "source": "data\\raw\\independent_wifi\\wpa2-linkup.pcap",
+    "sha256": "69d6964b3bc5c14ca7ecbac3fdfd09f291ee3217ec15a9dfc082de5cae329bc8",
+    "expected_current_v7": {
+      "total_packets": 16,
+      "evaluated_packets": 2,
+      "flagged_packets": 0,
+      "detected_rogue_aps": 0,
+      "threat_level": "low"
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+    "ground_truth": "Not established; these are compatibility observations, not detection accuracy."
+  },
+  {
+    "file": "Deauthentication.pcap",
+    "source": "data\\raw\\uav_nidd\\Deauthentication.pcap",
+    "sha256": "156fbd3d0f92a996e6854f4ccb032118a087d01c0cba1e1014334651e0cbdf8d",
+    "expected_current_v7": {
+      "total_packets": 15985,
+      "evaluated_packets": 1,
+      "flagged_packets": 0,
+      "detected_rogue_aps": 0,
+      "threat_level": "low"
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+    "ground_truth": "Not established; these are compatibility observations, not detection accuracy."
+  },
+  {
+    "file": "eviltwin-01.pcap",
+    "source": "data\\raw\\uav_nidd\\eviltwin-01.cap",
+    "sha256": "38fd5a18187d7f0474136d3222c9774484f0310445ec0108863b7a258b9fe61b",
+    "expected_current_v7": {
+      "total_packets": 299785,
+      "evaluated_packets": 1,
+      "flagged_packets": 0,
+      "detected_rogue_aps": 0,
+      "threat_level": "low"
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+    "ground_truth": "Not established; these are compatibility observations, not detection accuracy."
+  }
+]

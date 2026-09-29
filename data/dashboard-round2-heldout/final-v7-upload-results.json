@@ -1,0 +1,533 @@
+[
+  {
+    "file": "round2_rogue-attack-block24.pcap",
+    "model": "final_v7",
+    "runs": [
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "4d8e82e677184043a690b506b3c13797",
+          "filename": "round2_rogue-attack-block24.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 119,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 14541,
+          "detected_rogue_aps": 2,
+          "flagged_packets": 113,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771394205732629000",
+          "last_timestamp_ns": "1771394233717705000",
+          "completed_at": "2026-09-29T11:27:42.192242+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:6f",
+            "ssid": " KARIMM",
+            "packets": 64,
+            "first_seen": "2026-02-18T05:56:45.817250+00:00",
+            "last_seen": "2026-02-18T05:57:13.672338+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          },
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 49,
+            "first_seen": "2026-02-18T05:56:45.968435+00:00",
+            "last_seen": "2026-02-18T05:57:13.608370+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "a335259da6c3c575912128612c50b9d5b4395cc012c7e267a398202ef6e015cc"
+      },
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "0eea23a6eac14430947cc921fe115e4f",
+          "filename": "round2_rogue-attack-block24.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 119,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 14541,
+          "detected_rogue_aps": 2,
+          "flagged_packets": 113,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771394205732629000",
+          "last_timestamp_ns": "1771394233717705000",
+          "completed_at": "2026-09-29T11:27:55.875276+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:6f",
+            "ssid": " KARIMM",
+            "packets": 64,
+            "first_seen": "2026-02-18T05:56:45.817250+00:00",
+            "last_seen": "2026-02-18T05:57:13.672338+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          },
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 49,
+            "first_seen": "2026-02-18T05:56:45.968435+00:00",
+            "last_seen": "2026-02-18T05:57:13.608370+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "a335259da6c3c575912128612c50b9d5b4395cc012c7e267a398202ef6e015cc"
+      }
+    ],
+    "repeat_matches": true
+  },
+  {
+    "file": "round2_rogue-attack-second-block14.pcap",
+    "model": "final_v7",
+    "runs": [
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "08310022e762419981861d86a55fba5d",
+          "filename": "round2_rogue-attack-second-block14.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 353,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 13421,
+          "detected_rogue_aps": 2,
+          "flagged_packets": 290,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771393905726395000",
+          "last_timestamp_ns": "1771393933708397000",
+          "completed_at": "2026-09-29T11:28:08.150781+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:6f",
+            "ssid": " KARIMM",
+            "packets": 185,
+            "first_seen": "2026-02-18T05:51:45.826704+00:00",
+            "last_seen": "2026-02-18T05:52:13.644051+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          },
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 105,
+            "first_seen": "2026-02-18T05:51:45.963777+00:00",
+            "last_seen": "2026-02-18T05:52:13.560771+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "a22c41b0f6aa62dea177057420934d109e70380ebb8ef287cad2f76e08e3f045"
+      },
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "551ed25231884e10b5037c88e3564919",
+          "filename": "round2_rogue-attack-second-block14.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 353,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 13421,
+          "detected_rogue_aps": 2,
+          "flagged_packets": 290,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771393905726395000",
+          "last_timestamp_ns": "1771393933708397000",
+          "completed_at": "2026-09-29T11:28:19.906359+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:6f",
+            "ssid": " KARIMM",
+            "packets": 185,
+            "first_seen": "2026-02-18T05:51:45.826704+00:00",
+            "last_seen": "2026-02-18T05:52:13.644051+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          },
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 105,
+            "first_seen": "2026-02-18T05:51:45.963777+00:00",
+            "last_seen": "2026-02-18T05:52:13.560771+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "a22c41b0f6aa62dea177057420934d109e70380ebb8ef287cad2f76e08e3f045"
+      }
+    ],
+    "repeat_matches": true
+  },
+  {
+    "file": "round2_rogue-normal-block4.pcap",
+    "model": "final_v7",
+    "runs": [
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "3fd5a31ea54f4d8e8efa0fe6ee9c5929",
+          "filename": "round2_rogue-normal-block4.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 133,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 16049,
+          "detected_rogue_aps": 1,
+          "flagged_packets": 34,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771393605731601000",
+          "last_timestamp_ns": "1771393633712257000",
+          "completed_at": "2026-09-29T11:28:34.346366+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 34,
+            "first_seen": "2026-02-18T05:46:45.878264+00:00",
+            "last_seen": "2026-02-18T05:47:10.942437+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "b2dc37a4f5d5fb46ba7930e5acbb50e913bb08a372cbc81221e1e2202bbd80d4"
+      },
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "fad1560922c347b0b0b5052049edad64",
+          "filename": "round2_rogue-normal-block4.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 133,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 16049,
+          "detected_rogue_aps": 1,
+          "flagged_packets": 34,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771393605731601000",
+          "last_timestamp_ns": "1771393633712257000",
+          "completed_at": "2026-09-29T11:28:48.981784+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:00:5d",
+            "ssid": "Karim",
+            "packets": 34,
+            "first_seen": "2026-02-18T05:46:45.878264+00:00",
+            "last_seen": "2026-02-18T05:47:10.942437+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap",
+              "Sparse beacons"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "b2dc37a4f5d5fb46ba7930e5acbb50e913bb08a372cbc81221e1e2202bbd80d4"
+      }
+    ],
+    "repeat_matches": true
+  },
+  {
+    "file": "round2_beacon-attack-block9.pcap",
+    "model": "final_v7",
+    "runs": [
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "eb32e66c8afc44c78af8717edee08932",
+          "filename": "round2_beacon-attack-block9.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 1428,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 20019,
+          "detected_rogue_aps": 0,
+          "flagged_packets": 0,
+          "unattributed_positive_packets": 0,
+          "threat_level": "low",
+          "first_timestamp_ns": "1771369550605463000",
+          "last_timestamp_ns": "1771369578594830000",
+          "completed_at": "2026-09-29T11:29:07.964615+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [],
+        "prediction_sha256": "444b43182b8d033ecbf0915a7e0535abcf650833bf7f9d3930bf5bfeb1c0c35b"
+      },
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "0c82795b4c0446339bfec9c24ef0fbc4",
+          "filename": "round2_beacon-attack-block9.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 1428,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 20019,
+          "detected_rogue_aps": 0,
+          "flagged_packets": 0,
+          "unattributed_positive_packets": 0,
+          "threat_level": "low",
+          "first_timestamp_ns": "1771369550605463000",
+          "last_timestamp_ns": "1771369578594830000",
+          "completed_at": "2026-09-29T11:29:25.925004+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [],
+        "prediction_sha256": "444b43182b8d033ecbf0915a7e0535abcf650833bf7f9d3930bf5bfeb1c0c35b"
+      }
+    ],
+    "repeat_matches": true
+  },
+  {
+    "file": "round2_beacon-normal-block4.pcap",
+    "model": "final_v7",
+    "runs": [
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "0caf2becb22e410b99288cf4eb102eff",
+          "filename": "round2_beacon-normal-block4.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 187,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 24451,
+          "detected_rogue_aps": 1,
+          "flagged_packets": 1,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771369400613345000",
+          "last_timestamp_ns": "1771369428596433000",
+          "completed_at": "2026-09-29T11:29:46.320431+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:19:ff",
+            "ssid": "Karim",
+            "packets": 1,
+            "first_seen": "2026-02-17T23:03:47.857445+00:00",
+            "last_seen": "2026-02-17T23:03:47.857445+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "b3c62422fb8b5044f3c649034f2c0f599a0cbf3c2d82205fb998a0cf8c2875fc"
+      },
+      {
+        "status": "completed",
+        "error": null,
+        "capture": {
+          "id": "7b682e9f48874a74aa844fdcf7c51e2e",
+          "filename": "round2_beacon-normal-block4.pcap",
+          "format": "PCAP",
+          "model_artifact_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+          "scope": "ap_advertisements",
+          "evaluated_packets": 187,
+          "target": "AP impersonation advertisements including publisher RogueAP labels",
+          "total_packets": 24451,
+          "detected_rogue_aps": 1,
+          "flagged_packets": 1,
+          "unattributed_positive_packets": 0,
+          "threat_level": "high",
+          "first_timestamp_ns": "1771369400613345000",
+          "last_timestamp_ns": "1771369428596433000",
+          "completed_at": "2026-09-29T11:30:07.658202+00:00",
+          "heuristic_thresholds": {
+            "rssi_drift_db": 12,
+            "sequence_gap": 64,
+            "beacon_gap_ns": 1000000000,
+            "ssid_mac_count": 3,
+            "frames_per_second": 200
+          }
+        },
+        "model_sha256": "92750d55527c8ca5a2558eb84d4e15700523aa8be1e5deda2142e7f2150fc7b8",
+        "threats": [
+          {
+            "bssid": "02:00:00:00:19:ff",
+            "ssid": "Karim",
+            "packets": 1,
+            "first_seen": "2026-02-17T23:03:47.857445+00:00",
+            "last_seen": "2026-02-17T23:03:47.857445+00:00",
+            "severity": "high",
+            "evasion_tags": [
+              "Frame burst",
+              "RSSI drift",
+              "Sequence gap"
+            ],
+            "attack_type": "suspected_rogue_ap"
+          }
+        ],
+        "prediction_sha256": "b3c62422fb8b5044f3c649034f2c0f599a0cbf3c2d82205fb998a0cf8c2875fc"
+      }
+    ],
+    "repeat_matches": true
+  }
+]

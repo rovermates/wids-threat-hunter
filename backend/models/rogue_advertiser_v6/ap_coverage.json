@@ -1,0 +1,20 @@
+{
+  "awid_diagnostic": {
+    "labeled_positive_bssids": 1,
+    "alerted_bssids": 2,
+    "detected_positive_bssids": 1,
+    "false_alert_bssids": 1
+  },
+  "test_metrics": {
+    "labeled_positive_bssids": 1,
+    "alerted_bssids": 1,
+    "detected_positive_bssids": 1,
+    "false_alert_bssids": 0
+  },
+  "negative_control": {
+    "labeled_positive_bssids": 0,
+    "alerted_bssids": 0,
+    "detected_positive_bssids": 0,
+    "false_alert_bssids": 0
+  }
+}

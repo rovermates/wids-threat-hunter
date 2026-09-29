@@ -1,0 +1,77 @@
+{
+  "data\\raw\\uav_nidd\\Deauthentication.pcap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "0x000c": 15984,
+      "0x0008": 1
+    },
+    "advertisements_by_bssid": {
+      "42:f5:20:10:59:67": 1
+    }
+  },
+  "data\\raw\\uav_nidd\\eviltwin-01.cap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "0x000c": 299618,
+      "0x0008": 1,
+      "0x0020": 166
+    },
+    "advertisements_by_bssid": {
+      "42:f5:20:10:59:67": 1
+    }
+  },
+  "data\\raw\\uav_nidd\\MITM-AP.pcap": {
+    "complete": false,
+    "error": "tshark: The file \"data\\raw\\uav_nidd\\MITM-AP.pcap\" appears to be damaged or corrupt.\n(vwr: Invalid data length 3226214 (runs past the end of the record))\n",
+    "subtypes": {
+      "": 3
+    },
+    "advertisements_by_bssid": {}
+  },
+  "data\\raw\\uav_nidd\\Normal traffic.pcap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "": 13333
+    },
+    "advertisements_by_bssid": {}
+  },
+  "data\\raw\\independent_wifi\\http_PPI.pcap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "0x0028": 70,
+      "0x001d": 69,
+      "0x0020": 1
+    },
+    "advertisements_by_bssid": {}
+  },
+  "data\\raw\\independent_wifi\\wpa-eap-tls.pcap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "0x0028": 84,
+      "0x0020": 2
+    },
+    "advertisements_by_bssid": {}
+  },
+  "data\\raw\\independent_wifi\\wpa2-linkup.pcap": {
+    "complete": true,
+    "error": null,
+    "subtypes": {
+      "0x0008": 1,
+      "0x0004": 1,
+      "0x0005": 1,
+      "0x000b": 2,
+      "0x0000": 1,
+      "0x0001": 1,
+      "0x0028": 8,
+      "0x000a": 1
+    },
+    "advertisements_by_bssid": {
+      "50:0f:80:70:18:d0": 2
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "ensemble": {
+    "rows": 2499,
+    "positive_rows": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc_trapezoid": null,
+    "average_precision": null,
+    "confusion_matrix_tn_fp_fn_tp": [
+      2498,
+      1,
+      0,
+      0
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2498,
+          1,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.017827700008638203,
+      "timing_repetitions": [
+        0.017827700008638203,
+        0.018380000023171306,
+        0.01691519998712465
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 662,
+          "predicted_rogue": 1
+        },
+        "beacon_flood": {
+          "rows": 1837,
+          "predicted_rogue": 0
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2499,
+          0,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.020132500038016587,
+      "timing_repetitions": [
+        0.020132500038016587,
+        0.019579999963752925,
+        0.02278280002065003
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 662,
+          "predicted_rogue": 0
+        },
+        "beacon_flood": {
+          "rows": 1837,
+          "predicted_rogue": 0
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 65311,
+  "excluded_rows": 62812,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "b68790b655672ab381457ce3840ff43b6d2625c6095d2348a2dbd018b77fc1a0",
+  "evaluation_source": "New BeaconFlood labeled-prefix same-session blocked holdout",
+  "evaluation_note": "Publisher labels; see dataset audit and split limitations.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data/raw/wpa3/BeaconFlood-labelled.pcap",
+    "source_sha256": "fa756e643394e709e638b3349b34053c0a26773e3370aa8815bf79f8705d410e",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 201995,
+        "beacon_flood": 5281
+      },
+      "validation": {
+        "normal": 67117,
+        "beacon_flood": 1841
+      },
+      "test": {
+        "normal": 63474,
+        "beacon_flood": 1837
+      }
+    },
+    "csv_sha256": "b13fea09c7cf430c7b3aac3d16353c6fc5996f470c7cd4b3c8499c9b18375f85"
+  }
+}

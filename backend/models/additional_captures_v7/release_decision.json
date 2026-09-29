@@ -1,0 +1,15 @@
+{
+  "numeric_gates": {
+    "development_gates": false,
+    "new_rogue_precision": false,
+    "new_rogue_recall": false,
+    "awid_f1_nonregression": true,
+    "awid_recall_nonregression": true,
+    "old_wpa3_f1": true,
+    "beacon_negative_fpr": true,
+    "old_negative_fpr": false
+  },
+  "numeric_gates_passed": false,
+  "promote": false,
+  "reason": "Rejected: no development candidate passed all gates; new RogueAP precision 72.28% and recall 85.99% miss gates; older negative-control false positives increase from 0 to 1283 of 8530 advertisements. Publisher attack-period labels also do not verify rogue AP identity."
+}

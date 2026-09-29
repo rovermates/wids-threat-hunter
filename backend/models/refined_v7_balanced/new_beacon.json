@@ -1,0 +1,127 @@
+{
+  "ensemble": {
+    "rows": 2499,
+    "positive_rows": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc_trapezoid": null,
+    "average_precision": null,
+    "confusion_matrix_tn_fp_fn_tp": [
+      2497,
+      2,
+      0,
+      0
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2497,
+          2,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.12056469998788089,
+      "timing_repetitions": [
+        0.12143940001260489,
+        0.12056469998788089,
+        0.11151499999687076
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 662,
+          "predicted_rogue": 2
+        },
+        "beacon_flood": {
+          "rows": 1837,
+          "predicted_rogue": 0
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2498,
+          1,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.018351799983065575,
+      "timing_repetitions": [
+        0.018010700005106628,
+        0.019501900009345263,
+        0.018351799983065575
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 662,
+          "predicted_rogue": 1
+        },
+        "beacon_flood": {
+          "rows": 1837,
+          "predicted_rogue": 0
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 65311,
+  "excluded_rows": 62812,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "c8e63bf8fd1a7f8a97d14fc997ed5ee743364061f240f4649f092a2096c9926b",
+  "evaluation_source": "round2_beacon_holdout: consumed capture regression, excluded from fitting",
+  "evaluation_note": "Adaptive regression check on previously inspected captures, not an independent final test.",
+  "test_used_for_selection": true,
+  "data_metadata": {
+    "source": "data/raw/wpa3/BeaconFlood-labelled.pcap",
+    "source_sha256": "fa756e643394e709e638b3349b34053c0a26773e3370aa8815bf79f8705d410e",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 201995,
+        "beacon_flood": 5281
+      },
+      "validation": {
+        "normal": 67117,
+        "beacon_flood": 1841
+      },
+      "test": {
+        "normal": 63474,
+        "beacon_flood": 1837
+      }
+    },
+    "csv_sha256": "b13fea09c7cf430c7b3aac3d16353c6fc5996f470c7cd4b3c8499c9b18375f85"
+  },
+  "selection_detail": "Earlier test regressions informed this training protocol. Current model and threshold selected on development validation only; no test rows fitted."
+}

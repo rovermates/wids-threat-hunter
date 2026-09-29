@@ -1,0 +1,162 @@
+[
+  {
+    "file": "data\\raw\\independent_wifi\\http_PPI.pcap",
+    "status": "completed",
+    "error": null,
+    "capture": {
+      "id": "9847ec2ecbca490a9a6152f228a07841",
+      "filename": "http_PPI.pcap",
+      "format": "PCAP",
+      "model_artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+      "scope": "ap_advertisements",
+      "evaluated_packets": 0,
+      "target": "AP impersonation advertisements including publisher RogueAP labels",
+      "total_packets": 140,
+      "detected_rogue_aps": 0,
+      "flagged_packets": 0,
+      "unattributed_positive_packets": 0,
+      "threat_level": "unknown",
+      "first_timestamp_ns": "1178922637041165000",
+      "last_timestamp_ns": "1178922639028877000",
+      "completed_at": "2026-09-29T12:26:44.028337+00:00",
+      "heuristic_thresholds": {
+        "rssi_drift_db": 12,
+        "sequence_gap": 64,
+        "beacon_gap_ns": 1000000000,
+        "ssid_mac_count": 3,
+        "frames_per_second": 200
+      }
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac"
+  },
+  {
+    "file": "data\\raw\\independent_wifi\\wpa-eap-tls.pcap",
+    "status": "completed",
+    "error": null,
+    "capture": {
+      "id": "0c062a7a39cd48fd9992cd1f4a0569dd",
+      "filename": "wpa-eap-tls.pcap",
+      "format": "PCAP",
+      "model_artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+      "scope": "ap_advertisements",
+      "evaluated_packets": 0,
+      "target": "AP impersonation advertisements including publisher RogueAP labels",
+      "total_packets": 86,
+      "detected_rogue_aps": 0,
+      "flagged_packets": 0,
+      "unattributed_positive_packets": 0,
+      "threat_level": "unknown",
+      "first_timestamp_ns": "1430662758172173000",
+      "last_timestamp_ns": "1430663014072376000",
+      "completed_at": "2026-09-29T12:26:45.629559+00:00",
+      "heuristic_thresholds": {
+        "rssi_drift_db": 12,
+        "sequence_gap": 64,
+        "beacon_gap_ns": 1000000000,
+        "ssid_mac_count": 3,
+        "frames_per_second": 200
+      }
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac"
+  },
+  {
+    "file": "data\\raw\\independent_wifi\\wpa2-linkup.pcap",
+    "status": "completed",
+    "error": null,
+    "capture": {
+      "id": "1989428d696b42bab8d99653e0b378f8",
+      "filename": "wpa2-linkup.pcap",
+      "format": "PCAP",
+      "model_artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+      "scope": "ap_advertisements",
+      "evaluated_packets": 2,
+      "target": "AP impersonation advertisements including publisher RogueAP labels",
+      "total_packets": 16,
+      "detected_rogue_aps": 0,
+      "flagged_packets": 0,
+      "unattributed_positive_packets": 0,
+      "threat_level": "low",
+      "first_timestamp_ns": "1626136919455000000",
+      "last_timestamp_ns": "1626137011617000000",
+      "completed_at": "2026-09-29T12:26:47.335223+00:00",
+      "heuristic_thresholds": {
+        "rssi_drift_db": 12,
+        "sequence_gap": 64,
+        "beacon_gap_ns": 1000000000,
+        "ssid_mac_count": 3,
+        "frames_per_second": 200
+      }
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac"
+  },
+  {
+    "file": "data\\raw\\uav_nidd\\Normal traffic.pcap",
+    "status": "failed",
+    "error": "Capture contains no decodable IEEE 802.11 frames"
+  },
+  {
+    "file": "data\\raw\\uav_nidd\\Deauthentication.pcap",
+    "status": "completed",
+    "error": null,
+    "capture": {
+      "id": "b61a664d0e194b1bb14fc98aff17001c",
+      "filename": "Deauthentication.pcap",
+      "format": "PCAP",
+      "model_artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+      "scope": "ap_advertisements",
+      "evaluated_packets": 1,
+      "target": "AP impersonation advertisements including publisher RogueAP labels",
+      "total_packets": 15985,
+      "detected_rogue_aps": 0,
+      "flagged_packets": 0,
+      "unattributed_positive_packets": 0,
+      "threat_level": "low",
+      "first_timestamp_ns": "1708540259746350000",
+      "last_timestamp_ns": "1708540722529686000",
+      "completed_at": "2026-09-29T12:27:03.213064+00:00",
+      "heuristic_thresholds": {
+        "rssi_drift_db": 12,
+        "sequence_gap": 64,
+        "beacon_gap_ns": 1000000000,
+        "ssid_mac_count": 3,
+        "frames_per_second": 200
+      }
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac"
+  },
+  {
+    "file": "data\\raw\\uav_nidd\\eviltwin-01.cap",
+    "status": "completed",
+    "error": null,
+    "capture": {
+      "id": "c9640302ebe04c55bcd2cd5ac848aee1",
+      "filename": "eviltwin-01.pcap",
+      "format": "PCAP",
+      "model_artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+      "scope": "ap_advertisements",
+      "evaluated_packets": 1,
+      "target": "AP impersonation advertisements including publisher RogueAP labels",
+      "total_packets": 299785,
+      "detected_rogue_aps": 0,
+      "flagged_packets": 0,
+      "unattributed_positive_packets": 0,
+      "threat_level": "low",
+      "first_timestamp_ns": "1708615300974987000",
+      "last_timestamp_ns": "1708615918679111000",
+      "completed_at": "2026-09-29T12:30:57.239526+00:00",
+      "heuristic_thresholds": {
+        "rssi_drift_db": 12,
+        "sequence_gap": 64,
+        "beacon_gap_ns": 1000000000,
+        "ssid_mac_count": 3,
+        "frames_per_second": 200
+      }
+    },
+    "model_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac"
+  },
+  {
+    "file": "data\\raw\\uav_nidd\\MITM-AP.pcap",
+    "status": "failed",
+    "error": "91b5212d3ec242f7b064a0c0897827ef.pcap: expected PCAP or PCAPNG file signature"
+  }
+]

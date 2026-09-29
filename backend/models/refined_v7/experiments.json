@@ -1,0 +1,2102 @@
+[
+  {
+    "name": "hgb240_l15_positive1",
+    "features": "portable",
+    "threshold": 0.798818048901497,
+    "utility": 0.7965639881388615,
+    "point": {
+      "mean_f1": 0.9113925428001627,
+      "min_precision": 0.9269162210338681,
+      "min_recall": 0.6103286384976526,
+      "max_fpr": 0.09151785714285714
+    },
+    "seconds": 7.497259599971585,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981549815498155,
+        "recall": 0.9981549815498155,
+        "f1": 0.9981549815498155,
+        "pr_auc_trapezoid": 0.9993703459337708,
+        "average_precision": 0.9993712401980731,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          1,
+          541
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9269162210338681,
+        "recall": 0.6103286384976526,
+        "f1": 0.7360226468506723,
+        "pr_auc_trapezoid": 0.9119807183398392,
+        "average_precision": 0.9120511854776934,
+        "confusion_matrix_tn_fp_fn_tp": [
+          407,
+          41,
+          332,
+          520
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive1",
+    "features": "portable",
+    "threshold": 0.934073557910674,
+    "utility": 0.7868933790480275,
+    "point": {
+      "mean_f1": 0.8967252871633863,
+      "min_precision": 0.9488752556237219,
+      "min_recall": 0.5446009389671361,
+      "max_fpr": 0.05580357142857143
+    },
+    "seconds": 7.38220170000568,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981549815498155,
+        "recall": 0.9981549815498155,
+        "f1": 0.9981549815498155,
+        "pr_auc_trapezoid": 0.9999518064395504,
+        "average_precision": 0.9999518578473698,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          1,
+          541
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9488752556237219,
+        "recall": 0.5446009389671361,
+        "f1": 0.692020879940343,
+        "pr_auc_trapezoid": 0.9094525396232769,
+        "average_precision": 0.9095295178714398,
+        "confusion_matrix_tn_fp_fn_tp": [
+          423,
+          25,
+          388,
+          464
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive3",
+    "features": "portable",
+    "threshold": 0.9349639419445936,
+    "utility": 0.7991527836460639,
+    "point": {
+      "mean_f1": 0.9057045945112551,
+      "min_precision": 0.9431818181818182,
+      "min_recall": 0.5845070422535211,
+      "max_fpr": 0.06696428571428571
+    },
+    "seconds": 6.345229499973357,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981447124304267,
+        "recall": 0.992619926199262,
+        "f1": 0.9953746530989824,
+        "pr_auc_trapezoid": 0.9998517604763353,
+        "average_precision": 0.9998519374585906,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          4,
+          538
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9431818181818182,
+        "recall": 0.5845070422535211,
+        "f1": 0.7217391304347827,
+        "pr_auc_trapezoid": 0.9136862034098501,
+        "average_precision": 0.9137522937561626,
+        "confusion_matrix_tn_fp_fn_tp": [
+          418,
+          30,
+          354,
+          498
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive3",
+    "features": "portable",
+    "threshold": 0.9147524270717172,
+    "utility": 0.7992348294450994,
+    "point": {
+      "mean_f1": 0.9128896751862127,
+      "min_precision": 0.9274336283185841,
+      "min_recall": 0.6150234741784038,
+      "max_fpr": 0.09151785714285714
+    },
+    "seconds": 7.5187433999963105,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9999829321678044,
+        "average_precision": 0.9999829479569496,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9274336283185841,
+        "recall": 0.6150234741784038,
+        "f1": 0.739590684544813,
+        "pr_auc_trapezoid": 0.911714734744434,
+        "average_precision": 0.9117784617440606,
+        "confusion_matrix_tn_fp_fn_tp": [
+          407,
+          41,
+          328,
+          524
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive8",
+    "features": "portable",
+    "threshold": 0.943757065281505,
+    "utility": 0.7952532011024767,
+    "point": {
+      "mean_f1": 0.9178093714579427,
+      "min_precision": 0.9110378912685337,
+      "min_recall": 0.6490610328638498,
+      "max_fpr": 0.12053571428571429
+    },
+    "seconds": 6.653656600043178,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981447124304267,
+        "recall": 0.992619926199262,
+        "f1": 0.9953746530989824,
+        "pr_auc_trapezoid": 0.9999130366681064,
+        "average_precision": 0.9999131384448214,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          4,
+          538
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9110378912685337,
+        "recall": 0.6490610328638498,
+        "f1": 0.7580534612748457,
+        "pr_auc_trapezoid": 0.912609558045723,
+        "average_precision": 0.9126796720046487,
+        "confusion_matrix_tn_fp_fn_tp": [
+          394,
+          54,
+          299,
+          553
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive8",
+    "features": "portable",
+    "threshold": 0.9789174738394447,
+    "utility": 0.7958461397907363,
+    "point": {
+      "mean_f1": 0.9036995100120643,
+      "min_precision": 0.944015444015444,
+      "min_recall": 0.573943661971831,
+      "max_fpr": 0.06473214285714286
+    },
+    "seconds": 7.551041399943642,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981515711645101,
+        "recall": 0.996309963099631,
+        "f1": 0.997229916897507,
+        "pr_auc_trapezoid": 0.9999829321678044,
+        "average_precision": 0.9999829479569496,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          2,
+          540
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.944015444015444,
+        "recall": 0.573943661971831,
+        "f1": 0.7138686131386861,
+        "pr_auc_trapezoid": 0.909703568696643,
+        "average_precision": 0.9097694479721129,
+        "confusion_matrix_tn_fp_fn_tp": [
+          419,
+          29,
+          363,
+          489
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf2",
+    "features": "portable",
+    "threshold": 0.646875,
+    "utility": 0.7571064182837139,
+    "point": {
+      "mean_f1": 0.9116546429224653,
+      "min_precision": 0.8825448613376835,
+      "min_recall": 0.6349765258215962,
+      "max_fpr": 0.16071428571428573
+    },
+    "seconds": 10.41676330001792,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.998430935984318,
+        "average_precision": 0.9975181487637954,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 0.9999857015703248,
+        "average_precision": 0.9999857206859408,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.8825448613376835,
+        "recall": 0.6349765258215962,
+        "f1": 0.7385665529010239,
+        "pr_auc_trapezoid": 0.8594890924053284,
+        "average_precision": 0.8597363894683159,
+        "confusion_matrix_tn_fp_fn_tp": [
+          376,
+          72,
+          311,
+          541
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf8",
+    "features": "portable",
+    "threshold": 0.636494083805511,
+    "utility": 0.7464703109454511,
+    "point": {
+      "mean_f1": 0.9160445302901491,
+      "min_precision": 0.8680981595092024,
+      "min_recall": 0.6643192488262911,
+      "max_fpr": 0.19196428571428573
+    },
+    "seconds": 9.872602900024503,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981549815498155,
+        "recall": 0.9981549815498155,
+        "f1": 0.9981549815498155,
+        "pr_auc_trapezoid": 0.9990159670083891,
+        "average_precision": 0.9989868971247242,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          1,
+          541
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 0.9999434471455012,
+        "average_precision": 0.9999435219063701,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.8680981595092024,
+        "recall": 0.6643192488262911,
+        "f1": 0.7526595744680851,
+        "pr_auc_trapezoid": 0.8595198677097715,
+        "average_precision": 0.8597115090633056,
+        "confusion_matrix_tn_fp_fn_tp": [
+          362,
+          86,
+          286,
+          566
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive1",
+    "features": "behavior",
+    "threshold": 0.8636532794965064,
+    "utility": 0.8192925258877621,
+    "point": {
+      "mean_f1": 0.9137383676047306,
+      "min_precision": 0.9524680073126143,
+      "min_recall": 0.6115023474178404,
+      "max_fpr": 0.05803571428571429
+    },
+    "seconds": 13.016818200005218,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9978789307940168,
+        "average_precision": 0.9978832741685397,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9524680073126143,
+        "recall": 0.6115023474178404,
+        "f1": 0.7448177269478199,
+        "pr_auc_trapezoid": 0.9144715372674546,
+        "average_precision": 0.9145247725213111,
+        "confusion_matrix_tn_fp_fn_tp": [
+          422,
+          26,
+          331,
+          521
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive1",
+    "features": "behavior",
+    "threshold": 0.9425838310813839,
+    "utility": 0.8258029996476677,
+    "point": {
+      "mean_f1": 0.9117163966966281,
+      "min_precision": 0.967680608365019,
+      "min_recall": 0.5974178403755869,
+      "max_fpr": 0.03794642857142857
+    },
+    "seconds": 13.880008499952964,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9994128706118184,
+        "average_precision": 0.9994136858138167,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.967680608365019,
+        "recall": 0.5974178403755869,
+        "f1": 0.7387518142235123,
+        "pr_auc_trapezoid": 0.9122884588273174,
+        "average_precision": 0.9123418700372243,
+        "confusion_matrix_tn_fp_fn_tp": [
+          431,
+          17,
+          343,
+          509
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive3",
+    "features": "behavior",
+    "threshold": 0.9069785087729698,
+    "utility": 0.8141882089560584,
+    "point": {
+      "mean_f1": 0.9149092015784593,
+      "min_precision": 0.9427549194991055,
+      "min_recall": 0.6185446009389671,
+      "max_fpr": 0.07142857142857142
+    },
+    "seconds": 12.815935299964622,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9994081938722269,
+        "average_precision": 0.999408983635371,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9973262032085561,
+        "f1": 0.998661311914324,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          1,
+          373
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9427549194991055,
+        "recall": 0.6185446009389671,
+        "f1": 0.7469879518072289,
+        "pr_auc_trapezoid": 0.9166085290169835,
+        "average_precision": 0.9166569217555027,
+        "confusion_matrix_tn_fp_fn_tp": [
+          416,
+          32,
+          325,
+          527
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive3",
+    "features": "behavior",
+    "threshold": 0.9794322051809099,
+    "utility": 0.8194625372033238,
+    "point": {
+      "mean_f1": 0.9095216418310904,
+      "min_precision": 0.9636711281070746,
+      "min_recall": 0.5915492957746479,
+      "max_fpr": 0.04241071428571429
+    },
+    "seconds": 13.669389399990905,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981549815498155,
+        "recall": 0.9981549815498155,
+        "f1": 0.9981549815498155,
+        "pr_auc_trapezoid": 0.9999378024408581,
+        "average_precision": 0.9999378606892702,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          1,
+          541
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 0.9999577264595605,
+        "average_precision": 0.9999577821559247,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9636711281070746,
+        "recall": 0.5915492957746479,
+        "f1": 0.7330909090909091,
+        "pr_auc_trapezoid": 0.913895161103127,
+        "average_precision": 0.9139462887291712,
+        "confusion_matrix_tn_fp_fn_tp": [
+          429,
+          19,
+          348,
+          504
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive8",
+    "features": "behavior",
+    "threshold": 0.9713920158722043,
+    "utility": 0.8157810674467889,
+    "point": {
+      "mean_f1": 0.9107760372657024,
+      "min_precision": 0.9550561797752809,
+      "min_recall": 0.5985915492957746,
+      "max_fpr": 0.05357142857142857
+    },
+    "seconds": 13.347456399991643,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9995609105119742,
+        "average_precision": 0.9995615006502602,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9550561797752809,
+        "recall": 0.5985915492957746,
+        "f1": 0.7359307359307359,
+        "pr_auc_trapezoid": 0.9180063597401443,
+        "average_precision": 0.9180556205351726,
+        "confusion_matrix_tn_fp_fn_tp": [
+          424,
+          24,
+          342,
+          510
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive8",
+    "features": "behavior",
+    "threshold": 0.9855606719943236,
+    "utility": 0.8242851420662745,
+    "point": {
+      "mean_f1": 0.9115378248295206,
+      "min_precision": 0.9658444022770398,
+      "min_recall": 0.5974178403755869,
+      "max_fpr": 0.04017857142857143
+    },
+    "seconds": 13.451636499958113,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9999794995723686,
+        "average_precision": 0.9999795185546259,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 0.9999857587135433,
+        "average_precision": 0.9999857776766412,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9658444022770398,
+        "recall": 0.5974178403755869,
+        "f1": 0.73821609862219,
+        "pr_auc_trapezoid": 0.9131140500461565,
+        "average_precision": 0.9131650985792634,
+        "confusion_matrix_tn_fp_fn_tp": [
+          430,
+          18,
+          343,
+          509
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf2",
+    "features": "behavior",
+    "threshold": 0.8605803571428572,
+    "utility": 0.8152771574457294,
+    "point": {
+      "mean_f1": 0.9024543874926777,
+      "min_precision": 0.9722772277227723,
+      "min_recall": 0.5762910798122066,
+      "max_fpr": 0.03125
+    },
+    "seconds": 17.969264700019266,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981060606060606,
+        "recall": 0.9723247232472325,
+        "f1": 0.9850467289719627,
+        "pr_auc_trapezoid": 0.9989477047202499,
+        "average_precision": 0.9989442958131234,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          15,
+          527
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9973262032085561,
+        "f1": 0.998661311914324,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          1,
+          373
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9722772277227723,
+        "recall": 0.5762910798122066,
+        "f1": 0.7236551215917465,
+        "pr_auc_trapezoid": 0.9153781384227182,
+        "average_precision": 0.9148684388674344,
+        "confusion_matrix_tn_fp_fn_tp": [
+          434,
+          14,
+          361,
+          491
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf8",
+    "features": "behavior",
+    "threshold": 0.8498752115301699,
+    "utility": 0.8195175843539458,
+    "point": {
+      "mean_f1": 0.9040916956886206,
+      "min_precision": 0.9695238095238096,
+      "min_recall": 0.5974178403755869,
+      "max_fpr": 0.03571428571428571
+    },
+    "seconds": 16.170695200038608,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9980806142034548,
+        "recall": 0.959409594095941,
+        "f1": 0.9783631232361242,
+        "pr_auc_trapezoid": 0.9991260428513209,
+        "average_precision": 0.9991274446769849,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          22,
+          520
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9893048128342246,
+        "f1": 0.9946236559139785,
+        "pr_auc_trapezoid": 0.9999999999999999,
+        "average_precision": 0.9999999999999999,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          4,
+          370
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9695238095238096,
+        "recall": 0.5974178403755869,
+        "f1": 0.739288307915759,
+        "pr_auc_trapezoid": 0.9171948021380252,
+        "average_precision": 0.9172450567922358,
+        "confusion_matrix_tn_fp_fn_tp": [
+          432,
+          16,
+          343,
+          509
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive1",
+    "features": "invariant",
+    "threshold": 0.4400694797092709,
+    "utility": 0.6741343194358488,
+    "point": {
+      "mean_f1": 0.8187038197711942,
+      "min_precision": 0.9232673267326733,
+      "min_recall": 0.43779342723004694,
+      "max_fpr": 0.06919642857142858
+    },
+    "seconds": 12.983738000039011,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9641434262948207,
+        "recall": 0.8929889298892989,
+        "f1": 0.9272030651340997,
+        "pr_auc_trapezoid": 0.9720746932338727,
+        "average_precision": 0.9720909185230248,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28209,
+          18,
+          58,
+          484
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9478021978021978,
+        "recall": 0.9224598930481284,
+        "f1": 0.9349593495934959,
+        "pr_auc_trapezoid": 0.9813008742932355,
+        "average_precision": 0.9813200235464561,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1070,
+          19,
+          29,
+          345
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9232673267326733,
+        "recall": 0.43779342723004694,
+        "f1": 0.5939490445859873,
+        "pr_auc_trapezoid": 0.8557369796156006,
+        "average_precision": 0.8558383721706302,
+        "confusion_matrix_tn_fp_fn_tp": [
+          417,
+          31,
+          479,
+          373
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2471,
+          5,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive1",
+    "features": "invariant",
+    "threshold": 0.4453045318687505,
+    "utility": 0.6656067253753106,
+    "point": {
+      "mean_f1": 0.8203791096811456,
+      "min_precision": 0.9013761467889908,
+      "min_recall": 0.4612676056338028,
+      "max_fpr": 0.09598214285714286
+    },
+    "seconds": 13.974197199975606,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9836734693877551,
+        "recall": 0.8892988929889298,
+        "f1": 0.9341085271317829,
+        "pr_auc_trapezoid": 0.9764190751973618,
+        "average_precision": 0.9764356592115321,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28219,
+          8,
+          60,
+          482
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.935933147632312,
+        "recall": 0.8983957219251337,
+        "f1": 0.9167803547066848,
+        "pr_auc_trapezoid": 0.9746259792811266,
+        "average_precision": 0.9746534928580032,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1066,
+          23,
+          38,
+          336
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9013761467889908,
+        "recall": 0.4612676056338028,
+        "f1": 0.610248447204969,
+        "pr_auc_trapezoid": 0.8441714527941996,
+        "average_precision": 0.8442792623130833,
+        "confusion_matrix_tn_fp_fn_tp": [
+          405,
+          43,
+          459,
+          393
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2469,
+          7,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive3",
+    "features": "invariant",
+    "threshold": 0.674703549138276,
+    "utility": 0.6756904746264167,
+    "point": {
+      "mean_f1": 0.811343978985907,
+      "min_precision": 0.9346590909090909,
+      "min_recall": 0.4413145539906103,
+      "max_fpr": 0.05580357142857143
+    },
+    "seconds": 12.901373100001365,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.973630831643002,
+        "recall": 0.8856088560885609,
+        "f1": 0.927536231884058,
+        "pr_auc_trapezoid": 0.9773855243901208,
+        "average_precision": 0.9773999383040082,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28214,
+          13,
+          62,
+          480
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9346590909090909,
+        "recall": 0.8796791443850267,
+        "f1": 0.90633608815427,
+        "pr_auc_trapezoid": 0.971626535279988,
+        "average_precision": 0.971658298833174,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1066,
+          23,
+          45,
+          329
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9376558603491272,
+        "recall": 0.4413145539906103,
+        "f1": 0.6001596169193935,
+        "pr_auc_trapezoid": 0.8553213361867671,
+        "average_precision": 0.8554203104787041,
+        "confusion_matrix_tn_fp_fn_tp": [
+          423,
+          25,
+          476,
+          376
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2473,
+          3,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive3",
+    "features": "invariant",
+    "threshold": 0.7033626292466322,
+    "utility": 0.6553316730996053,
+    "point": {
+      "mean_f1": 0.8016240104570835,
+      "min_precision": 0.9250645994832042,
+      "min_recall": 0.42018779342723006,
+      "max_fpr": 0.06473214285714286
+    },
+    "seconds": 14.36684490001062,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9747899159663865,
+        "recall": 0.8560885608856088,
+        "f1": 0.9115913555992141,
+        "pr_auc_trapezoid": 0.9736619080057316,
+        "average_precision": 0.9736802760919451,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28215,
+          12,
+          78,
+          464
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9510086455331412,
+        "recall": 0.8823529411764706,
+        "f1": 0.9153952843273232,
+        "pr_auc_trapezoid": 0.9772526677222451,
+        "average_precision": 0.9772777120470059,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1072,
+          17,
+          44,
+          330
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9250645994832042,
+        "recall": 0.42018779342723006,
+        "f1": 0.5778853914447135,
+        "pr_auc_trapezoid": 0.8400981538545194,
+        "average_precision": 0.8402095802832266,
+        "confusion_matrix_tn_fp_fn_tp": [
+          419,
+          29,
+          494,
+          358
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2471,
+          5,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l15_positive8",
+    "features": "invariant",
+    "threshold": 0.8234271518756325,
+    "utility": 0.6333891331768496,
+    "point": {
+      "mean_f1": 0.7885220137938852,
+      "min_precision": 0.9157608695652174,
+      "min_recall": 0.3955399061032864,
+      "max_fpr": 0.06919642857142858
+    },
+    "seconds": 13.108351700007915,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9797160243407708,
+        "recall": 0.8911439114391144,
+        "f1": 0.9333333333333333,
+        "pr_auc_trapezoid": 0.9800387127039105,
+        "average_precision": 0.9800521198538641,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28217,
+          10,
+          59,
+          483
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.933933933933934,
+        "recall": 0.8315508021390374,
+        "f1": 0.8797736916548797,
+        "pr_auc_trapezoid": 0.961729851345972,
+        "average_precision": 0.961776149218103,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1067,
+          22,
+          63,
+          311
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9157608695652174,
+        "recall": 0.3955399061032864,
+        "f1": 0.5524590163934426,
+        "pr_auc_trapezoid": 0.8382438074805938,
+        "average_precision": 0.8383646110940901,
+        "confusion_matrix_tn_fp_fn_tp": [
+          417,
+          31,
+          515,
+          337
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2475,
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "hgb240_l31_positive8",
+    "features": "invariant",
+    "threshold": 0.8382015430721386,
+    "utility": 0.664142581369728,
+    "point": {
+      "mean_f1": 0.807553044146388,
+      "min_precision": 0.9349593495934959,
+      "min_recall": 0.40492957746478875,
+      "max_fpr": 0.05357142857142857
+    },
+    "seconds": 13.63983310002368,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9796747967479674,
+        "recall": 0.8892988929889298,
+        "f1": 0.9323017408123792,
+        "pr_auc_trapezoid": 0.9789189870369123,
+        "average_precision": 0.9789336608011922,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28217,
+          10,
+          60,
+          482
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9791044776119403,
+        "recall": 0.8770053475935828,
+        "f1": 0.92524682651622,
+        "pr_auc_trapezoid": 0.9819638282360462,
+        "average_precision": 0.9819841680658816,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1082,
+          7,
+          46,
+          328
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9349593495934959,
+        "recall": 0.40492957746478875,
+        "f1": 0.5651105651105651,
+        "pr_auc_trapezoid": 0.8402180536753973,
+        "average_precision": 0.840329297174405,
+        "confusion_matrix_tn_fp_fn_tp": [
+          424,
+          24,
+          507,
+          345
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2474,
+          2,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf2",
+    "features": "invariant",
+    "threshold": 0.33973214285714287,
+    "utility": 0.5792656749461806,
+    "point": {
+      "mean_f1": 0.7963076173220855,
+      "min_precision": 0.8350515463917526,
+      "min_recall": 0.4753521126760563,
+      "max_fpr": 0.17857142857142858
+    },
+    "seconds": 22.040338499995414,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9080962800875274,
+        "recall": 0.7656826568265682,
+        "f1": 0.8308308308308309,
+        "pr_auc_trapezoid": 0.9404717183631771,
+        "average_precision": 0.9405186390004293,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28185,
+          42,
+          127,
+          415
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9201995012468828,
+        "recall": 0.9866310160427807,
+        "f1": 0.952258064516129,
+        "pr_auc_trapezoid": 0.9904275599835732,
+        "average_precision": 0.9904328565802143,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1057,
+          32,
+          5,
+          369
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.8350515463917526,
+        "recall": 0.4753521126760563,
+        "f1": 0.605833956619297,
+        "pr_auc_trapezoid": 0.8281852907288735,
+        "average_precision": 0.8283231717757435,
+        "confusion_matrix_tn_fp_fn_tp": [
+          368,
+          80,
+          447,
+          405
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2466,
+          10,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "extra160_leaf8",
+    "features": "invariant",
+    "threshold": 0.41542362183912085,
+    "utility": 0.5274340484563584,
+    "point": {
+      "mean_f1": 0.7681019217297541,
+      "min_precision": 0.8122362869198312,
+      "min_recall": 0.4518779342723005,
+      "max_fpr": 0.19866071428571427
+    },
+    "seconds": 21.3558095000335,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9363867684478372,
+        "recall": 0.6789667896678967,
+        "f1": 0.7871657754010695,
+        "pr_auc_trapezoid": 0.9477706870954422,
+        "average_precision": 0.9478178640565925,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28202,
+          25,
+          174,
+          368
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9093198992443325,
+        "recall": 0.9652406417112299,
+        "f1": 0.9364461738002594,
+        "pr_auc_trapezoid": 0.9852837317797652,
+        "average_precision": 0.9852987397943278,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1053,
+          36,
+          13,
+          361
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.8122362869198312,
+        "recall": 0.4518779342723005,
+        "f1": 0.5806938159879337,
+        "pr_auc_trapezoid": 0.8131653723955393,
+        "average_precision": 0.8133076893089144,
+        "confusion_matrix_tn_fp_fn_tp": [
+          359,
+          89,
+          467,
+          385
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2467,
+          9,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "multiclass180_l15_positive1",
+    "features": "behavior_multiclass",
+    "threshold": 0.9471369933410584,
+    "utility": 0.8203446853009762,
+    "point": {
+      "mean_f1": 0.9066793600159325,
+      "min_precision": 0.9691714836223507,
+      "min_recall": 0.5903755868544601,
+      "max_fpr": 0.03571428571428571
+    },
+    "seconds": 27.78154809999978,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981308411214953,
+        "recall": 0.985239852398524,
+        "f1": 0.9916434540389972,
+        "pr_auc_trapezoid": 0.9994544378369514,
+        "average_precision": 0.9994550408384514,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          8,
+          534
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9893048128342246,
+        "f1": 0.9946236559139785,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          4,
+          370
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9691714836223507,
+        "recall": 0.5903755868544601,
+        "f1": 0.7337709700948213,
+        "pr_auc_trapezoid": 0.9163986536578466,
+        "average_precision": 0.9164480974772178,
+        "confusion_matrix_tn_fp_fn_tp": [
+          432,
+          16,
+          349,
+          503
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "multiclass180_l31_positive1",
+    "features": "behavior_multiclass",
+    "threshold": 0.9655849026418113,
+    "utility": 0.8180759245540534,
+    "point": {
+      "mean_f1": 0.9053286073172996,
+      "min_precision": 0.9658444022770398,
+      "min_recall": 0.5974178403755869,
+      "max_fpr": 0.04017857142857143
+    },
+    "seconds": 30.40927930001635,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9980988593155894,
+        "recall": 0.9686346863468634,
+        "f1": 0.9831460674157303,
+        "pr_auc_trapezoid": 0.9995216999720843,
+        "average_precision": 0.9995222242853725,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          17,
+          525
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9893048128342246,
+        "f1": 0.9946236559139785,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          4,
+          370
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9658444022770398,
+        "recall": 0.5974178403755869,
+        "f1": 0.73821609862219,
+        "pr_auc_trapezoid": 0.914187623738074,
+        "average_precision": 0.9142377167678881,
+        "confusion_matrix_tn_fp_fn_tp": [
+          430,
+          18,
+          343,
+          509
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "multiclass180_l15_positive3",
+    "features": "behavior_multiclass",
+    "threshold": 0.9592408808779053,
+    "utility": 0.8165103355207464,
+    "point": {
+      "mean_f1": 0.910166019625374,
+      "min_precision": 0.9568480300187617,
+      "min_recall": 0.5985915492957746,
+      "max_fpr": 0.05133928571428571
+    },
+    "seconds": 27.886652400018647,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981447124304267,
+        "recall": 0.992619926199262,
+        "f1": 0.9953746530989824,
+        "pr_auc_trapezoid": 0.9995479329059596,
+        "average_precision": 0.9995484360536021,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          4,
+          538
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9973262032085561,
+        "f1": 0.998661311914324,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          1,
+          373
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9568480300187617,
+        "recall": 0.5985915492957746,
+        "f1": 0.7364620938628159,
+        "pr_auc_trapezoid": 0.9146434541624796,
+        "average_precision": 0.9146947306092839,
+        "confusion_matrix_tn_fp_fn_tp": [
+          425,
+          23,
+          342,
+          510
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "name": "multiclass180_l31_positive3",
+    "features": "behavior_multiclass",
+    "threshold": 0.9398499980488076,
+    "utility": 0.8100739545437619,
+    "point": {
+      "mean_f1": 0.9161898163814547,
+      "min_precision": 0.9337979094076655,
+      "min_recall": 0.6291079812206573,
+      "max_fpr": 0.08482142857142858
+    },
+    "seconds": 31.08461379999062,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9981549815498155,
+        "recall": 0.9981549815498155,
+        "f1": 0.9981549815498155,
+        "pr_auc_trapezoid": 0.9993846305121769,
+        "average_precision": 0.9993853190552618,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          1,
+          541
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9973262032085561,
+        "f1": 0.998661311914324,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          1,
+          373
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.9337979094076655,
+        "recall": 0.6291079812206573,
+        "f1": 0.7517531556802244,
+        "pr_auc_trapezoid": 0.911558759573021,
+        "average_precision": 0.9116107781374864,
+        "confusion_matrix_tn_fp_fn_tp": [
+          410,
+          38,
+          316,
+          536
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "source": "https://data.mendeley.com/datasets/cxx5t5nw7z/2",
+  "doi": "10.17632/cxx5t5nw7z.2",
+  "license": {
+    "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+    "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+    "url": "http://creativecommons.org/licenses/by/4.0",
+    "category": "Creative",
+    "short_name": "CC BY 4.0",
+    "full_name": "Creative Commons Attribution 4.0 International"
+  },
+  "new_files": [
+    {
+      "name": "RogueAP.pcap",
+      "bytes": 170632107,
+      "sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+      "url": "https://data.mendeley.com/public-files/datasets/cxx5t5nw7z/files/2c951427-e2c0-446b-ad8d-360214cf468d/file_downloaded"
+    },
+    {
+      "name": "RogueAP.xlsx",
+      "bytes": 52728900,
+      "sha256": "05b1b24a1888a6fc4bc28c094957a0d884817591f781e8e2ef40f823ef1c2db3",
+      "url": "https://data.mendeley.com/public-files/datasets/cxx5t5nw7z/files/f4bd4b3e-e14b-413d-bb88-f0972eaa4403/file_downloaded"
+    },
+    {
+      "name": "BeaconFlood.pcap",
+      "bytes": 171560621,
+      "sha256": "8ecdcc2af060cc5f6ae0a9caa4d0a03b87360912b71753932b6217953c6b9c74",
+      "url": "https://data.mendeley.com/public-files/datasets/cxx5t5nw7z/files/9dc6dff0-1ba1-4e53-a6b5-f96e33295e61/file_downloaded"
+    },
+    {
+      "name": "BeaconFlood.csv",
+      "bytes": 87949824,
+      "sha256": "b13fea09c7cf430c7b3aac3d16353c6fc5996f470c7cd4b3c8499c9b18375f85",
+      "url": "https://data.mendeley.com/public-files/datasets/cxx5t5nw7z/files/bcf4f25f-afb2-4aa5-bd10-8beaa5bdae94/file_downloaded"
+    }
+  ],
+  "excluded_tail": "BeaconFlood only source packet numbers 1..364201 have companion labels",
+  "label_warning": "RogueAP row labels span two advertising BSSIDs, one also present in normal intervals; not verified AP identities"
+}

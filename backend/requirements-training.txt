@@ -1,0 +1,4 @@
+# Optional dependencies for the full-pipeline and hard-negative experiments.
+# The deployed dashboard model does not require CatBoost.
+-r requirements.txt
+catboost==1.2.10

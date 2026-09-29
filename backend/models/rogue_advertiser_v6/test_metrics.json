@@ -1,0 +1,127 @@
+{
+  "ensemble": {
+    "rows": 1656,
+    "positive_rows": 527,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "pr_auc_trapezoid": 1.0000000000000002,
+    "average_precision": 1.0000000000000002,
+    "confusion_matrix_tn_fp_fn_tp": [
+      1129,
+      0,
+      0,
+      527
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0000000000000002,
+        "average_precision": 1.0000000000000002,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1129,
+          0,
+          0,
+          527
+        ]
+      },
+      "seconds_median": 0.013071800000034273,
+      "timing_repetitions": [
+        0.01430199999595061,
+        0.013022099999943748,
+        0.013071800000034273
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1129,
+          "predicted_rogue": 0
+        },
+        "evil_twin": {
+          "rows": 527,
+          "predicted_rogue": 527
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 1.0,
+        "recall": 0.9924098671726755,
+        "f1": 0.9961904761904762,
+        "pr_auc_trapezoid": 0.9998973347253085,
+        "average_precision": 0.999897427311977,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1129,
+          0,
+          4,
+          523
+        ]
+      },
+      "seconds_median": 0.041499200015095994,
+      "timing_repetitions": [
+        0.04112309997435659,
+        0.041499200015095994,
+        0.041787699999986216
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1129,
+          "predicted_rogue": 0
+        },
+        "evil_twin": {
+          "rows": 527,
+          "predicted_rogue": 523
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 96675,
+  "excluded_rows": 95019,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte"
+  ],
+  "classification_target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+  "evaluation_source": "WPA3 consumed blocked holdout",
+  "evaluation_note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data/raw/wpa3/evilTwin.pcap",
+    "source_sha256": "11807b431cce6b5087b8bf9890f99660323f242f5dabc843401826812798e632",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 292413,
+        "evil_twin": 3957
+      },
+      "validation": {
+        "normal": 104429,
+        "evil_twin": 7447
+      },
+      "test": {
+        "normal": 96148,
+        "evil_twin": 527
+      }
+    },
+    "csv_sha256": "578ba6240cc8d4aae57454ff3a43b9cf54e55912ee4bfa76cbbd0a3c062725b0"
+  },
+  "scope_informed_by_consumed_diagnostics": true,
+  "selection_note": "Estimator and threshold selected on development only; scope was informed by consumed test diagnostics."
+}

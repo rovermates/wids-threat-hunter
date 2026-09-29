@@ -1,0 +1,133 @@
+{
+  "ensemble": {
+    "rows": 943,
+    "positive_rows": 564,
+    "precision": 0.7521246458923513,
+    "recall": 0.9414893617021277,
+    "f1": 0.8362204724409449,
+    "pr_auc_trapezoid": 0.9191817570442411,
+    "average_precision": 0.9057162196829907,
+    "confusion_matrix_tn_fp_fn_tp": [
+      204,
+      175,
+      33,
+      531
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7521246458923513,
+        "recall": 0.9414893617021277,
+        "f1": 0.8362204724409449,
+        "pr_auc_trapezoid": 0.9191817570442411,
+        "average_precision": 0.9057162196829907,
+        "confusion_matrix_tn_fp_fn_tp": [
+          204,
+          175,
+          33,
+          531
+        ]
+      },
+      "seconds_median": 0.0676493999781087,
+      "timing_repetitions": [
+        0.06891679996624589,
+        0.06590079999295995,
+        0.0676493999781087
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 175
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 531
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7386363636363636,
+        "recall": 0.9219858156028369,
+        "f1": 0.8201892744479495,
+        "pr_auc_trapezoid": 0.8672053526029017,
+        "average_precision": 0.7923968189417206,
+        "confusion_matrix_tn_fp_fn_tp": [
+          195,
+          184,
+          44,
+          520
+        ]
+      },
+      "seconds_median": 0.04607949999626726,
+      "timing_repetitions": [
+        0.04607949999626726,
+        0.04712390003260225,
+        0.04598569998051971
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 184
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 520
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 943,
+  "excluded_rows": 0,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+  "evaluation_source": "round2_rogue_holdout: consumed regression; excluded from fitting",
+  "evaluation_note": "Adaptive regression check on previously inspected captures. Not independent generalization evidence.",
+  "test_used_for_selection": true,
+  "data_metadata": {
+    "source": "data/raw/wpa3/RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 146668,
+        "rogue_ap": 80086
+      },
+      "validation": {
+        "rogue_ap": 38542,
+        "normal": 38237
+      },
+      "test": {
+        "normal": 42660,
+        "rogue_ap": 41027
+      }
+    },
+    "csv_sha256": "6ae5641dee0c899a421c8f28079374f6044c5611084bdf5c829589a619479ab8",
+    "feature_version": "advertisement-only-v1",
+    "source_cache": "round2_rogue_holdout",
+    "short_windows": [
+      5,
+      20
+    ],
+    "gap_reset_ns": 5000000000
+  }
+}

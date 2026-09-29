@@ -1,0 +1,117 @@
+{
+  "ensemble": {
+    "rows": 8530,
+    "positive_rows": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc_trapezoid": null,
+    "average_precision": null,
+    "confusion_matrix_tn_fp_fn_tp": [
+      7613,
+      917,
+      0,
+      0
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          7613,
+          917,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.3350118999951519,
+      "timing_repetitions": [
+        0.3350118999951519,
+        0.3519168999628164,
+        0.33328860002802685
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 8530,
+          "predicted_rogue": 917
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          7602,
+          928,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.2939767999923788,
+      "timing_repetitions": [
+        0.28846530005102977,
+        0.3111678000423126,
+        0.2939767999923788
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 8530,
+          "predicted_rogue": 928
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 8530,
+  "excluded_rows": 0,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "a0371d8d58725912784e1104743a7f940303dcaab5e1661afd63245bf3cf97cb",
+  "evaluation_source": "behavior_negative: consumed regression; excluded from fitting",
+  "evaluation_note": "Adaptive regression check on previously inspected captures. Not independent generalization evidence.",
+  "test_used_for_selection": true,
+  "data_metadata": {
+    "source": "data/raw/wpa3/Deauth.pcap",
+    "source_sha256": "5e8fa3d9572506790d3856722df36ef2ea162da115e85b01e357b5486bc701ac",
+    "mode": "negative",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "test": {
+        "normal": 515384,
+        "deauthentication": 207222
+      }
+    },
+    "csv_sha256": "69cc308a029a7c9adbb372a7e001030237e428857883a510738f0e721a1e53c4",
+    "feature_version": "advertisement-only-v1",
+    "source_cache": "behavior_negative",
+    "short_windows": [
+      5,
+      20
+    ],
+    "gap_reset_ns": 5000000000
+  }
+}

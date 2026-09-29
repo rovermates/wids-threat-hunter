@@ -1,0 +1,388 @@
+{
+  "results": [
+    {
+      "file": "Network_Join_Nokia_Mobile.pcap",
+      "runs": [
+        {
+          "status": "completed",
+          "capture": {
+            "id": "3e8a7dad6f784931b000e11a5a7c8797",
+            "filename": "Network_Join_Nokia_Mobile.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 684,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 1180,
+            "detected_rogue_aps": 1,
+            "flagged_packets": 195,
+            "unattributed_positive_packets": 0,
+            "threat_level": "high",
+            "first_timestamp_ns": "946685053080796000",
+            "last_timestamp_ns": "946685119436420000",
+            "completed_at": "2026-09-28T07:38:42.077225+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [
+            {
+              "bssid": "00:01:e3:41:bd:6e",
+              "ssid": "martinet3",
+              "packets": 195,
+              "first_seen": "2000-01-01T00:04:28.952881+00:00",
+              "last_seen": "2000-01-01T00:05:06.738739+00:00",
+              "severity": "high",
+              "evasion_tags": [
+                "Sequence gap"
+              ],
+              "attack_type": "suspected_rogue_ap"
+            }
+          ],
+          "packet_results_sha256": "a9b10328f3d7eff8d05698f203bebd1ced14aaf012228c0b9474e2d9e35ef632",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        },
+        {
+          "status": "completed",
+          "capture": {
+            "id": "6ad9db59cd2d4827b9c8eb126e79581c",
+            "filename": "Network_Join_Nokia_Mobile.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 684,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 1180,
+            "detected_rogue_aps": 1,
+            "flagged_packets": 195,
+            "unattributed_positive_packets": 0,
+            "threat_level": "high",
+            "first_timestamp_ns": "946685053080796000",
+            "last_timestamp_ns": "946685119436420000",
+            "completed_at": "2026-09-28T07:38:45.895024+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [
+            {
+              "bssid": "00:01:e3:41:bd:6e",
+              "ssid": "martinet3",
+              "packets": 195,
+              "first_seen": "2000-01-01T00:04:28.952881+00:00",
+              "last_seen": "2000-01-01T00:05:06.738739+00:00",
+              "severity": "high",
+              "evasion_tags": [
+                "Sequence gap"
+              ],
+              "attack_type": "suspected_rogue_ap"
+            }
+          ],
+          "packet_results_sha256": "a9b10328f3d7eff8d05698f203bebd1ced14aaf012228c0b9474e2d9e35ef632",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        }
+      ],
+      "repeat_matches": true
+    },
+    {
+      "file": "wpa-Induction.pcap",
+      "runs": [
+        {
+          "status": "failed",
+          "error": "Wi-Fi output lacks packet number or frame type"
+        },
+        {
+          "status": "failed",
+          "error": "Wi-Fi output lacks packet number or frame type",
+          "previous_capture_preserved": true
+        }
+      ],
+      "repeat_matches": true
+    },
+    {
+      "file": "mesh.pcap",
+      "runs": [
+        {
+          "status": "completed",
+          "capture": {
+            "id": "bd306a69b9cc4efba0076aa8db1494ba",
+            "filename": "mesh.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 450,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 780,
+            "detected_rogue_aps": 0,
+            "flagged_packets": 0,
+            "unattributed_positive_packets": 0,
+            "threat_level": "low",
+            "first_timestamp_ns": "1247544845137966000",
+            "last_timestamp_ns": "1247544868131508000",
+            "completed_at": "2026-09-28T07:38:51.541277+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [],
+          "packet_results_sha256": "21815cc95f7ca7f79d13d2c6d9c5a997eea5f08fa2bbfb26d194ccf6edd8ff1a",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        },
+        {
+          "status": "completed",
+          "capture": {
+            "id": "68e150ff993b49c9858279c094ca225f",
+            "filename": "mesh.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 450,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 780,
+            "detected_rogue_aps": 0,
+            "flagged_packets": 0,
+            "unattributed_positive_packets": 0,
+            "threat_level": "low",
+            "first_timestamp_ns": "1247544845137966000",
+            "last_timestamp_ns": "1247544868131508000",
+            "completed_at": "2026-09-28T07:38:54.208917+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [],
+          "packet_results_sha256": "21815cc95f7ca7f79d13d2c6d9c5a997eea5f08fa2bbfb26d194ccf6edd8ff1a",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        }
+      ],
+      "repeat_matches": true
+    },
+    {
+      "file": "synthetic-ssid-impersonation.pcap",
+      "runs": [
+        {
+          "status": "completed",
+          "capture": {
+            "id": "53d4f5e23bf145259bce0f837ba6f342",
+            "filename": "synthetic-ssid-impersonation.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 1000,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 1000,
+            "detected_rogue_aps": 0,
+            "flagged_packets": 0,
+            "unattributed_positive_packets": 0,
+            "threat_level": "low",
+            "first_timestamp_ns": "1701000000000000000",
+            "last_timestamp_ns": "1701000061338600000",
+            "completed_at": "2026-09-28T07:38:57.893856+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [],
+          "packet_results_sha256": "78620debb78d04980b80a0d2d495a963a19c5deb1e0c42fc7b218ff08ad247e2",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        },
+        {
+          "status": "completed",
+          "capture": {
+            "id": "15f7a849d0c64fd282bc3603b35c5e83",
+            "filename": "synthetic-ssid-impersonation.pcap",
+            "format": "PCAP",
+            "model_artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+            "scope": "ap_advertisements",
+            "evaluated_packets": 1000,
+            "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+            "total_packets": 1000,
+            "detected_rogue_aps": 0,
+            "flagged_packets": 0,
+            "unattributed_positive_packets": 0,
+            "threat_level": "low",
+            "first_timestamp_ns": "1701000000000000000",
+            "last_timestamp_ns": "1701000061338600000",
+            "completed_at": "2026-09-28T07:39:00.552258+00:00",
+            "heuristic_thresholds": {
+              "rssi_drift_db": 12,
+              "sequence_gap": 64,
+              "beacon_gap_ns": 1000000000,
+              "ssid_mac_count": 3,
+              "frames_per_second": 200
+            }
+          },
+          "threats": [],
+          "packet_results_sha256": "78620debb78d04980b80a0d2d495a963a19c5deb1e0c42fc7b218ff08ad247e2",
+          "model_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c",
+          "benchmark": {
+            "source": "AWID2 consumed-test diagnostic",
+            "rows": 59909,
+            "accuracy": 0.9995993924118246,
+            "f1": 0.9917920656634747,
+            "precision": 0.9951956074124915,
+            "recall": 0.9884117246080436,
+            "confusion_matrix": [
+              [
+                58435,
+                7
+              ],
+              [
+                17,
+                1450
+              ]
+            ],
+            "labels": [
+              "Non-target",
+              "Impersonation"
+            ],
+            "scope": "ap_advertisements",
+            "note": "Previously evaluated capture; diagnostic comparison, not fresh independent evidence."
+          }
+        }
+      ],
+      "repeat_matches": true
+    }
+  ],
+  "browser_errors": []
+}

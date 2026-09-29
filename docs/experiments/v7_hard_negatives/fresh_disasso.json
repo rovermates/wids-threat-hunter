@@ -1,0 +1,113 @@
+{
+  "ensemble": {
+    "rows": 1257,
+    "positive_rows": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "pr_auc_trapezoid": null,
+    "average_precision": null,
+    "confusion_matrix_tn_fp_fn_tp": [
+      1195,
+      62,
+      0,
+      0
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 1257,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1195,
+          62,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.09271439997246489,
+      "timing_repetitions": [
+        0.1870212000212632,
+        0.08766520000062883,
+        0.09271439997246489
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1257,
+          "predicted_rogue": 62
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 1257,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1163,
+          94,
+          0,
+          0
+        ]
+      },
+      "seconds_median": 0.07558459998108447,
+      "timing_repetitions": [
+        0.07507239998085424,
+        0.08355360000859946,
+        0.07558459998108447
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 1257,
+          "predicted_rogue": 94
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 1257,
+  "excluded_rows": 0,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "8e76d182a3a22efddea1508c0203e72a190657ba0ee0205b8f2d5e777d4030be",
+  "evaluation_source": "New disassociation reserved temporal test blocks, same session as development",
+  "evaluation_note": "Publisher labels; see dataset audit and split limitations.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data\\raw\\wpa3\\Disasso.pcap",
+    "source_sha256": "5d10a8339980fea99bdc69ce982cfcccbd78248b743522408e5bccdf89990a89",
+    "label_sha256": "012363a678933eadc49cb5b56bbf215d19aa6f62cb1295441e89ac94b10d34df",
+    "role": "development",
+    "label_counts": {
+      "train": {
+        "normal": 4187
+      },
+      "validation": {
+        "normal": 1293
+      },
+      "test": {
+        "normal": 1257
+      }
+    },
+    "target_interpretation": "Publisher disassociation/aggregation scenario labels are non-RAP classes; not independently verified physical AP identities."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "scope": "ap_advertisements",
+  "train_counts": {
+    "behavior_train": {
+      "normal": 107830,
+      "evil_twin": 2162,
+      "probe_response": 1558,
+      "cafe_latte": 801,
+      "beacon": 386
+    },
+    "behavior_wpa3": {
+      "normal": 3510,
+      "evil_twin": 1092
+    },
+    "round2_beacon": {
+      "beacon_flood": 5281,
+      "normal": 2844
+    },
+    "round2_rogue": {
+      "normal": 1866,
+      "rogue_ap": 1551
+    }
+  },
+  "all_development_negatives_retained": true,
+  "test_rows_fitted": 0,
+  "selection": "Validation utility = mean source F1 - .6 max source FPR - .25 precision deficit below .90 - .25 recall deficit below .85",
+  "evaluation_limit": "Previously inspected same-session test captures; regression evidence only."
+}

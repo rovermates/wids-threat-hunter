@@ -1,0 +1,414 @@
+{
+  "format_version": 3,
+  "features": [
+    "rssi_dbm",
+    "frame_type",
+    "frame_subtype",
+    "rssi_window_count",
+    "rssi_std_db",
+    "rssi_delta_db",
+    "sequence_delta",
+    "sequence_gap",
+    "beacon_interval_delta_ns",
+    "ssid_mac_count_60s",
+    "frame_length",
+    "retry_flag",
+    "protected_flag",
+    "fragment_number",
+    "beacon_interval_tu",
+    "ess_flag",
+    "privacy_flag",
+    "qos_tid",
+    "to_ds",
+    "from_ds",
+    "power_management",
+    "more_fragments",
+    "more_data",
+    "duration_us",
+    "source_is_bssid",
+    "destination_is_bssid",
+    "destination_multicast",
+    "ssid_present",
+    "ap_window_count",
+    "ap_window_span_s",
+    "ap_length_mean",
+    "ap_length_std",
+    "ap_unique_sources",
+    "ap_security_changes",
+    "ap_channel_changes",
+    "ap_beacon_interval_cv",
+    "ap_beacon_fraction",
+    "ap_probe_fraction",
+    "ap_authentication_fraction",
+    "ap_association_fraction",
+    "ap_deauth_fraction",
+    "ap_data_fraction",
+    "ap_protected_fraction",
+    "ap_retry_fraction",
+    "ap_broadcast_fraction",
+    "advertised_privacy",
+    "advertised_channel",
+    "advertised_beacon_tu",
+    "auth_algorithm"
+  ],
+  "threshold": 0.09447059884559884,
+  "rssi_window": 100,
+  "behavior_window": 100,
+  "scope": "ap_advertisements",
+  "model_name": "v7-refined-extra240_leaf3",
+  "selection": {
+    "name": "extra240_leaf3",
+    "features": "behavior",
+    "threshold": 0.09447059884559884,
+    "utility": 0.8021186824614477,
+    "point": {
+      "mean_f1": 0.922654396747162,
+      "min_precision": 0.7403846153846154,
+      "min_family_recall": 0.903755868544601,
+      "max_fpr": 0.6026785714285714
+    },
+    "seconds": 24.317955299979076,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9730700179533214,
+        "recall": 1.0,
+        "f1": 0.986351228389445,
+        "pr_auc_trapezoid": 0.9985011595846665,
+        "average_precision": 0.9985027557889988,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28212,
+          15,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 0.9373433583959899,
+        "recall": 1.0,
+        "f1": 0.9676584734799483,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1064,
+          25,
+          0,
+          374
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.7403846153846154,
+        "recall": 0.903755868544601,
+        "f1": 0.813953488372093,
+        "pr_auc_trapezoid": 0.9162060046864802,
+        "average_precision": 0.9162649025083118,
+        "confusion_matrix_tn_fp_fn_tp": [
+          178,
+          270,
+          82,
+          770
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2475,
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "training_metadata": {
+    "target_labels": [
+      "evil_twin",
+      "cafe_latte",
+      "hirte",
+      "rogue_ap"
+    ],
+    "scope": "ap_advertisements",
+    "train_counts": {
+      "behavior_train": {
+        "normal": 107830,
+        "evil_twin": 2162,
+        "probe_response": 1558,
+        "cafe_latte": 801,
+        "beacon": 386
+      },
+      "behavior_wpa3": {
+        "normal": 3510,
+        "evil_twin": 1092
+      },
+      "round2_beacon": {
+        "beacon_flood": 5281,
+        "normal": 2844
+      },
+      "round2_rogue": {
+        "normal": 1866,
+        "rogue_ap": 1551
+      }
+    },
+    "selection": "Require each validation target family recall >= .90; maximize mean source F1 minus .2 maximum source FPR",
+    "test_rows_fitted": 0,
+    "test_scores_used_for_threshold": false,
+    "iteration_note": "Prior precision-heavy candidate rejected after consumed-test regression. Evaluation is adaptive regression evidence, not independent evidence."
+  },
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "target": "AP impersonation advertisements including publisher RogueAP labels",
+  "positive_label": "Impersonation",
+  "attack_type": "suspected_rogue_ap",
+  "score_semantics": "Uncalibrated classifier score, not verified AP identity",
+  "feature_importance": [
+    {
+      "feature": "frame_length",
+      "importance": 0.23484561995510903
+    },
+    {
+      "feature": "advertised_channel",
+      "importance": 0.13858209722387566
+    },
+    {
+      "feature": "rssi_dbm",
+      "importance": 0.13491463391232422
+    },
+    {
+      "feature": "ap_security_changes",
+      "importance": 0.06395364255432057
+    },
+    {
+      "feature": "privacy_flag",
+      "importance": 0.0463537885506385
+    },
+    {
+      "feature": "advertised_privacy",
+      "importance": 0.03746870075556831
+    },
+    {
+      "feature": "ap_beacon_interval_cv",
+      "importance": 0.03235693585550161
+    },
+    {
+      "feature": "ap_data_fraction",
+      "importance": 0.03194902334761035
+    },
+    {
+      "feature": "ap_protected_fraction",
+      "importance": 0.02638919308781115
+    },
+    {
+      "feature": "missingindicator_beacon_interval_delta_ns",
+      "importance": 0.02408270366243871
+    },
+    {
+      "feature": "ap_beacon_fraction",
+      "importance": 0.022918425823254554
+    },
+    {
+      "feature": "missingindicator_sequence_delta",
+      "importance": 0.021885789804553867
+    },
+    {
+      "feature": "ap_broadcast_fraction",
+      "importance": 0.019672833183892697
+    },
+    {
+      "feature": "ap_unique_sources",
+      "importance": 0.01731598928124678
+    },
+    {
+      "feature": "ap_window_span_s",
+      "importance": 0.016899522624733557
+    },
+    {
+      "feature": "missingindicator_sequence_gap",
+      "importance": 0.016368056338001716
+    },
+    {
+      "feature": "ap_length_mean",
+      "importance": 0.015456926586478303
+    },
+    {
+      "feature": "ap_length_std",
+      "importance": 0.013614398745407943
+    },
+    {
+      "feature": "rssi_std_db",
+      "importance": 0.012867083927689671
+    },
+    {
+      "feature": "beacon_interval_delta_ns",
+      "importance": 0.008565667573956796
+    },
+    {
+      "feature": "sequence_gap",
+      "importance": 0.006990838443020365
+    },
+    {
+      "feature": "rssi_delta_db",
+      "importance": 0.005489705025651929
+    },
+    {
+      "feature": "missingindicator_rssi_delta_db",
+      "importance": 0.005350939392402446
+    },
+    {
+      "feature": "frame_subtype",
+      "importance": 0.005044199462141927
+    },
+    {
+      "feature": "duration_us",
+      "importance": 0.0049448015436068535
+    },
+    {
+      "feature": "retry_flag",
+      "importance": 0.004287142857112793
+    },
+    {
+      "feature": "sequence_delta",
+      "importance": 0.00425374486269651
+    },
+    {
+      "feature": "destination_multicast",
+      "importance": 0.004124964556960454
+    },
+    {
+      "feature": "missingindicator_rssi_std_db",
+      "importance": 0.0038621371478712112
+    },
+    {
+      "feature": "ap_probe_fraction",
+      "importance": 0.003399851720225714
+    },
+    {
+      "feature": "missingindicator_ap_beacon_interval_cv",
+      "importance": 0.0033015399119186587
+    },
+    {
+      "feature": "ap_retry_fraction",
+      "importance": 0.0031930163410724397
+    },
+    {
+      "feature": "ap_channel_changes",
+      "importance": 0.0028068680200230233
+    },
+    {
+      "feature": "rssi_window_count",
+      "importance": 0.0028023929611928986
+    },
+    {
+      "feature": "ap_window_count",
+      "importance": 0.0016816483706808697
+    },
+    {
+      "feature": "ap_deauth_fraction",
+      "importance": 0.001272540006067012
+    },
+    {
+      "feature": "ssid_mac_count_60s",
+      "importance": 0.00032813832191601897
+    },
+    {
+      "feature": "ap_association_fraction",
+      "importance": 0.00021755004472588074
+    },
+    {
+      "feature": "ap_authentication_fraction",
+      "importance": 0.00016293034571400816
+    },
+    {
+      "feature": "ess_flag",
+      "importance": 2.114833463156812e-05
+    },
+    {
+      "feature": "beacon_interval_tu",
+      "importance": 1.3757315628431465e-06
+    },
+    {
+      "feature": "advertised_beacon_tu",
+      "importance": 1.2423993106300106e-06
+    },
+    {
+      "feature": "missingindicator_ssid_mac_count_60s",
+      "importance": 2.514050800333472e-07
+    },
+    {
+      "feature": "frame_type",
+      "importance": 0.0
+    },
+    {
+      "feature": "protected_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "fragment_number",
+      "importance": 0.0
+    },
+    {
+      "feature": "qos_tid",
+      "importance": 0.0
+    },
+    {
+      "feature": "to_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "from_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "power_management",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_fragments",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_data",
+      "importance": 0.0
+    },
+    {
+      "feature": "source_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "destination_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "ssid_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "auth_algorithm",
+      "importance": 0.0
+    },
+    {
+      "feature": "missingindicator_qos_tid",
+      "importance": 0.0
+    },
+    {
+      "feature": "missingindicator_auth_algorithm",
+      "importance": 0.0
+    }
+  ],
+  "importance_method": "Tree mean decrease in impurity",
+  "artifact_sha256": "c8e63bf8fd1a7f8a97d14fc997ed5ee743364061f240f4649f092a2096c9926b"
+}

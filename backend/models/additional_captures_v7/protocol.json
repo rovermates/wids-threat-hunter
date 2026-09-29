@@ -1,0 +1,155 @@
+{
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "scope": "ap_advertisements",
+  "train_counts": {
+    "behavior_train": {
+      "normal": 15000,
+      "evil_twin": 2162,
+      "probe_response": 1558,
+      "cafe_latte": 801,
+      "beacon": 386
+    },
+    "behavior_wpa3": {
+      "normal": 3510,
+      "evil_twin": 1092
+    },
+    "round2_beacon": {
+      "beacon_flood": 5281,
+      "normal": 2844
+    },
+    "round2_rogue": {
+      "normal": 1866,
+      "rogue_ap": 1551
+    }
+  },
+  "validation_counts": {
+    "behavior_train": {
+      "normal": 26928,
+      "beacon": 1299,
+      "evil_twin": 274,
+      "cafe_latte": 268
+    },
+    "behavior_wpa3": {
+      "normal": 1089,
+      "evil_twin": 374
+    },
+    "round2_rogue": {
+      "rogue_ap": 852,
+      "normal": 448
+    },
+    "round2_beacon": {
+      "beacon_flood": 1841,
+      "normal": 635
+    }
+  },
+  "sources": [
+    {
+      "source": "data/processed/detection_train.joblib",
+      "source_sha256": "56af9d5023149028b14fc854567eb06ed0092cab630dae75b4e43f4c01a986d9",
+      "mode": "awid-train",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 1218588,
+          "arp": 47974,
+          "cafe_latte": 32522,
+          "amok": 26946,
+          "deauthentication": 7955,
+          "authentication_request": 3500,
+          "evil_twin": 2201,
+          "probe_response": 1558,
+          "fragmentation": 598,
+          "beacon": 386
+        },
+        "validation": {
+          "normal": 302874,
+          "arp": 11623,
+          "cafe_latte": 10764,
+          "deauthentication": 2370,
+          "amok": 2105,
+          "beacon": 1299,
+          "evil_twin": 274,
+          "fragmentation": 102
+        }
+      }
+    },
+    {
+      "source": "data/raw/wpa3/evilTwin.pcap",
+      "source_sha256": "11807b431cce6b5087b8bf9890f99660323f242f5dabc843401826812798e632",
+      "mode": "wpa3",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 292413,
+          "evil_twin": 3957
+        },
+        "validation": {
+          "normal": 104429,
+          "evil_twin": 7447
+        },
+        "test": {
+          "normal": 96148,
+          "evil_twin": 527
+        }
+      },
+      "csv_sha256": "578ba6240cc8d4aae57454ff3a43b9cf54e55912ee4bfa76cbbd0a3c062725b0"
+    },
+    {
+      "source": "data/raw/wpa3/RogueAP.pcap",
+      "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+      "mode": "wpa3",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 146668,
+          "rogue_ap": 80086
+        },
+        "validation": {
+          "rogue_ap": 38542,
+          "normal": 38237
+        },
+        "test": {
+          "normal": 42660,
+          "rogue_ap": 41027
+        }
+      },
+      "csv_sha256": "6ae5641dee0c899a421c8f28079374f6044c5611084bdf5c829589a619479ab8"
+    },
+    {
+      "source": "data/raw/wpa3/BeaconFlood-labelled.pcap",
+      "source_sha256": "fa756e643394e709e638b3349b34053c0a26773e3370aa8815bf79f8705d410e",
+      "mode": "wpa3",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 201995,
+          "beacon_flood": 5281
+        },
+        "validation": {
+          "normal": 67117,
+          "beacon_flood": 1841
+        },
+        "test": {
+          "normal": 63474,
+          "beacon_flood": 1837
+        }
+      },
+      "csv_sha256": "b13fea09c7cf430c7b3aac3d16353c6fc5996f470c7cd4b3c8499c9b18375f85"
+    }
+  ],
+  "test_rows_fitted": 0,
+  "selection": "development only; blocked same-session holdouts, no independent-device claim"
+}

@@ -1,0 +1,126 @@
+{
+  "ensemble": {
+    "rows": 943,
+    "positive_rows": 564,
+    "precision": 0.7228017883755589,
+    "recall": 0.8599290780141844,
+    "f1": 0.7854251012145749,
+    "pr_auc_trapezoid": 0.9002383223683341,
+    "average_precision": 0.9003203042028805,
+    "confusion_matrix_tn_fp_fn_tp": [
+      193,
+      186,
+      79,
+      485
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7228017883755589,
+        "recall": 0.8599290780141844,
+        "f1": 0.7854251012145749,
+        "pr_auc_trapezoid": 0.9002383223683341,
+        "average_precision": 0.9003203042028805,
+        "confusion_matrix_tn_fp_fn_tp": [
+          193,
+          186,
+          79,
+          485
+        ]
+      },
+      "seconds_median": 0.012035799969453365,
+      "timing_repetitions": [
+        0.09660160000203177,
+        0.012035799969453365,
+        0.011736800021026284
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 186
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 485
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 1.0,
+        "recall": 0.324468085106383,
+        "f1": 0.4899598393574297,
+        "pr_auc_trapezoid": 0.8810305304559196,
+        "average_precision": 0.8754931889410156,
+        "confusion_matrix_tn_fp_fn_tp": [
+          379,
+          0,
+          381,
+          183
+        ]
+      },
+      "seconds_median": 0.009924599959049374,
+      "timing_repetitions": [
+        0.011322000005748123,
+        0.009924599959049374,
+        0.00973560003330931
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 0
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 183
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 83687,
+  "excluded_rows": 82744,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "b68790b655672ab381457ce3840ff43b6d2625c6095d2348a2dbd018b77fc1a0",
+  "evaluation_source": "New RogueAP same-session blocked holdout",
+  "evaluation_note": "Publisher labels; see dataset audit and split limitations.",
+  "test_used_for_selection": false,
+  "data_metadata": {
+    "source": "data/raw/wpa3/RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 146668,
+        "rogue_ap": 80086
+      },
+      "validation": {
+        "rogue_ap": 38542,
+        "normal": 38237
+      },
+      "test": {
+        "normal": 42660,
+        "rogue_ap": 41027
+      }
+    },
+    "csv_sha256": "6ae5641dee0c899a421c8f28079374f6044c5611084bdf5c829589a619479ab8"
+  }
+}

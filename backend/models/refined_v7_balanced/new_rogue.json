@@ -1,0 +1,127 @@
+{
+  "ensemble": {
+    "rows": 943,
+    "positive_rows": 564,
+    "precision": 0.6548347613219094,
+    "recall": 0.9485815602836879,
+    "f1": 0.774800868935554,
+    "pr_auc_trapezoid": 0.8962711452522417,
+    "average_precision": 0.896362567627411,
+    "confusion_matrix_tn_fp_fn_tp": [
+      97,
+      282,
+      29,
+      535
+    ]
+  },
+  "comparison": {
+    "candidate": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.6548347613219094,
+        "recall": 0.9485815602836879,
+        "f1": 0.774800868935554,
+        "pr_auc_trapezoid": 0.8962711452522417,
+        "average_precision": 0.896362567627411,
+        "confusion_matrix_tn_fp_fn_tp": [
+          97,
+          282,
+          29,
+          535
+        ]
+      },
+      "seconds_median": 0.10869039996759966,
+      "timing_repetitions": [
+        0.20585729996673763,
+        0.10869039996759966,
+        0.1067990000010468
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 282
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 535
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7228017883755589,
+        "recall": 0.8599290780141844,
+        "f1": 0.7854251012145749,
+        "pr_auc_trapezoid": 0.9002383223683341,
+        "average_precision": 0.9003203042028805,
+        "confusion_matrix_tn_fp_fn_tp": [
+          193,
+          186,
+          79,
+          485
+        ]
+      },
+      "seconds_median": 0.013950399996247143,
+      "timing_repetitions": [
+        0.019771800027228892,
+        0.013950399996247143,
+        0.01322470000013709
+      ],
+      "by_original_label": {
+        "normal": {
+          "rows": 379,
+          "predicted_rogue": 186
+        },
+        "rogue_ap": {
+          "rows": 564,
+          "predicted_rogue": 485
+        }
+      }
+    }
+  },
+  "scope": "ap_advertisements",
+  "source_rows": 83687,
+  "excluded_rows": 82744,
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "classification_target": "AP impersonation advertisements including publisher RogueAP labels",
+  "class_labels": [
+    "Non-target",
+    "Impersonation"
+  ],
+  "artifact_sha256": "c8e63bf8fd1a7f8a97d14fc997ed5ee743364061f240f4649f092a2096c9926b",
+  "evaluation_source": "round2_rogue_holdout: consumed capture regression, excluded from fitting",
+  "evaluation_note": "Adaptive regression check on previously inspected captures, not an independent final test.",
+  "test_used_for_selection": true,
+  "data_metadata": {
+    "source": "data/raw/wpa3/RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "mode": "wpa3",
+    "rssi_window": 100,
+    "behavior_window": 100,
+    "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+    "counts": {
+      "train": {
+        "normal": 146668,
+        "rogue_ap": 80086
+      },
+      "validation": {
+        "rogue_ap": 38542,
+        "normal": 38237
+      },
+      "test": {
+        "normal": 42660,
+        "rogue_ap": 41027
+      }
+    },
+    "csv_sha256": "6ae5641dee0c899a421c8f28079374f6044c5611084bdf5c829589a619479ab8"
+  },
+  "selection_detail": "Earlier test regressions informed this training protocol. Current model and threshold selected on development validation only; no test rows fitted."
+}

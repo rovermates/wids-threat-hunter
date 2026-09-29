@@ -1,0 +1,476 @@
+{
+  "format_version": 3,
+  "features": [
+    "rssi_dbm",
+    "frame_type",
+    "frame_subtype",
+    "rssi_window_count",
+    "rssi_std_db",
+    "rssi_delta_db",
+    "sequence_delta",
+    "sequence_gap",
+    "beacon_interval_delta_ns",
+    "ssid_mac_count_60s",
+    "frame_length",
+    "retry_flag",
+    "protected_flag",
+    "fragment_number",
+    "beacon_interval_tu",
+    "ess_flag",
+    "privacy_flag",
+    "qos_tid",
+    "to_ds",
+    "from_ds",
+    "power_management",
+    "more_fragments",
+    "more_data",
+    "duration_us",
+    "source_is_bssid",
+    "destination_is_bssid",
+    "destination_multicast",
+    "ssid_present",
+    "ap_window_count",
+    "ap_window_span_s",
+    "ap_length_mean",
+    "ap_length_std",
+    "ap_unique_sources",
+    "ap_security_changes",
+    "ap_channel_changes",
+    "ap_beacon_interval_cv",
+    "ap_beacon_fraction",
+    "ap_probe_fraction",
+    "ap_authentication_fraction",
+    "ap_association_fraction",
+    "ap_deauth_fraction",
+    "ap_data_fraction",
+    "ap_protected_fraction",
+    "ap_retry_fraction",
+    "ap_broadcast_fraction",
+    "advertised_privacy",
+    "advertised_channel",
+    "advertised_beacon_tu",
+    "auth_algorithm"
+  ],
+  "threshold": 0.9990183341199669,
+  "rssi_window": 100,
+  "behavior_window": 100,
+  "scope": "ap_advertisements",
+  "model_name": "hist_impersonation",
+  "selection": {
+    "model": "hist_impersonation",
+    "feature_set": "behavior",
+    "threshold": 0.9990183341199669,
+    "gates_met": true,
+    "operating_point": {
+      "mean_f1": 0.9995391705069125,
+      "minimum_family_recall": 1.0,
+      "minimum_precision": 0.998158379373849,
+      "maximum_normal_false_positive_rate": 3.7136066547831256e-05
+    },
+    "validation": {
+      "AWID": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9995737973701744,
+        "average_precision": 0.9995745356570247,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "WPA3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      }
+    },
+    "train_seconds": 7.084730300004594
+  },
+  "training_metadata": {
+    "scope": "ap_advertisements",
+    "target_labels": [
+      "evil_twin",
+      "cafe_latte",
+      "hirte"
+    ],
+    "source": "AWID published impersonation category",
+    "comparison_rule": "Rescore both baseline and candidate on this same target; evil-only F1 is not comparable",
+    "training_counts": {
+      "normal": 53510,
+      "evil_twin": 3254,
+      "probe_response": 1558,
+      "cafe_latte": 801,
+      "beacon": 386
+    },
+    "sources": [
+      {
+        "source": "data/processed/detection_train.joblib",
+        "source_sha256": "56af9d5023149028b14fc854567eb06ed0092cab630dae75b4e43f4c01a986d9",
+        "mode": "awid-train",
+        "rssi_window": 100,
+        "behavior_window": 100,
+        "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+        "counts": {
+          "train": {
+            "normal": 1218588,
+            "arp": 47974,
+            "cafe_latte": 32522,
+            "amok": 26946,
+            "deauthentication": 7955,
+            "authentication_request": 3500,
+            "evil_twin": 2201,
+            "probe_response": 1558,
+            "fragmentation": 598,
+            "beacon": 386
+          },
+          "validation": {
+            "normal": 302874,
+            "arp": 11623,
+            "cafe_latte": 10764,
+            "deauthentication": 2370,
+            "amok": 2105,
+            "beacon": 1299,
+            "evil_twin": 274,
+            "fragmentation": 102
+          }
+        }
+      },
+      {
+        "source": "data/raw/wpa3/evilTwin.pcap",
+        "source_sha256": "11807b431cce6b5087b8bf9890f99660323f242f5dabc843401826812798e632",
+        "mode": "wpa3",
+        "rssi_window": 100,
+        "behavior_window": 100,
+        "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+        "counts": {
+          "train": {
+            "normal": 292413,
+            "evil_twin": 3957
+          },
+          "validation": {
+            "normal": 104429,
+            "evil_twin": 7447
+          },
+          "test": {
+            "normal": 96148,
+            "evil_twin": 527
+          }
+        },
+        "csv_sha256": "578ba6240cc8d4aae57454ff3a43b9cf54e55912ee4bfa76cbbd0a3c062725b0"
+      }
+    ],
+    "validation_gates": {
+      "precision_each_source": 0.95,
+      "recall_each_present_positive_family": 0.9,
+      "normal_false_positive_rate": 0.0001
+    },
+    "test_rows_fitted": 0,
+    "features": {
+      "portable": [
+        "rssi_dbm",
+        "frame_type",
+        "frame_subtype",
+        "rssi_window_count",
+        "rssi_std_db",
+        "rssi_delta_db",
+        "sequence_delta",
+        "sequence_gap",
+        "beacon_interval_delta_ns",
+        "ssid_mac_count_60s",
+        "frame_length",
+        "retry_flag",
+        "protected_flag",
+        "fragment_number",
+        "beacon_interval_tu",
+        "ess_flag",
+        "privacy_flag",
+        "qos_tid",
+        "to_ds",
+        "from_ds",
+        "power_management",
+        "more_fragments",
+        "more_data",
+        "duration_us",
+        "source_is_bssid",
+        "destination_is_bssid",
+        "destination_multicast",
+        "ssid_present"
+      ],
+      "behavior": [
+        "rssi_dbm",
+        "frame_type",
+        "frame_subtype",
+        "rssi_window_count",
+        "rssi_std_db",
+        "rssi_delta_db",
+        "sequence_delta",
+        "sequence_gap",
+        "beacon_interval_delta_ns",
+        "ssid_mac_count_60s",
+        "frame_length",
+        "retry_flag",
+        "protected_flag",
+        "fragment_number",
+        "beacon_interval_tu",
+        "ess_flag",
+        "privacy_flag",
+        "qos_tid",
+        "to_ds",
+        "from_ds",
+        "power_management",
+        "more_fragments",
+        "more_data",
+        "duration_us",
+        "source_is_bssid",
+        "destination_is_bssid",
+        "destination_multicast",
+        "ssid_present",
+        "ap_window_count",
+        "ap_window_span_s",
+        "ap_length_mean",
+        "ap_length_std",
+        "ap_unique_sources",
+        "ap_security_changes",
+        "ap_channel_changes",
+        "ap_beacon_interval_cv",
+        "ap_beacon_fraction",
+        "ap_probe_fraction",
+        "ap_authentication_fraction",
+        "ap_association_fraction",
+        "ap_deauth_fraction",
+        "ap_data_fraction",
+        "ap_protected_fraction",
+        "ap_retry_fraction",
+        "ap_broadcast_fraction",
+        "advertised_privacy",
+        "advertised_channel",
+        "advertised_beacon_tu",
+        "auth_algorithm"
+      ]
+    }
+  },
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte"
+  ],
+  "target": "AP impersonation activity (evil twin, cafe-latte, hirte)",
+  "positive_label": "Impersonation",
+  "attack_type": "suspected_rogue_ap",
+  "score_semantics": "Uncalibrated impersonation score; not verified AP identity",
+  "feature_importance": [
+    {
+      "feature": "frame_length",
+      "importance": 0.8014207206037101
+    },
+    {
+      "feature": "advertised_channel",
+      "importance": 0.17585504088672757
+    },
+    {
+      "feature": "ap_length_std",
+      "importance": 0.022622828775781756
+    },
+    {
+      "feature": "duration_us",
+      "importance": 0.00010140973378052285
+    },
+    {
+      "feature": "sequence_delta",
+      "importance": 5.1394389704767685e-17
+    },
+    {
+      "feature": "beacon_interval_delta_ns",
+      "importance": 5.1394389704767685e-17
+    },
+    {
+      "feature": "ap_length_mean",
+      "importance": 5.1394389704767685e-17
+    },
+    {
+      "feature": "ap_broadcast_fraction",
+      "importance": 5.1394389704767685e-17
+    },
+    {
+      "feature": "rssi_dbm",
+      "importance": 0.0
+    },
+    {
+      "feature": "frame_type",
+      "importance": 0.0
+    },
+    {
+      "feature": "frame_subtype",
+      "importance": 0.0
+    },
+    {
+      "feature": "rssi_window_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rssi_std_db",
+      "importance": 0.0
+    },
+    {
+      "feature": "rssi_delta_db",
+      "importance": 0.0
+    },
+    {
+      "feature": "sequence_gap",
+      "importance": 0.0
+    },
+    {
+      "feature": "ssid_mac_count_60s",
+      "importance": 0.0
+    },
+    {
+      "feature": "retry_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "protected_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "fragment_number",
+      "importance": 0.0
+    },
+    {
+      "feature": "beacon_interval_tu",
+      "importance": 0.0
+    },
+    {
+      "feature": "ess_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "privacy_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "qos_tid",
+      "importance": 0.0
+    },
+    {
+      "feature": "to_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "from_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "power_management",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_fragments",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_data",
+      "importance": 0.0
+    },
+    {
+      "feature": "source_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "destination_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "destination_multicast",
+      "importance": 0.0
+    },
+    {
+      "feature": "ssid_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_window_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_window_span_s",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_unique_sources",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_security_changes",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_channel_changes",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_beacon_interval_cv",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_beacon_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_probe_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_authentication_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_association_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_deauth_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_data_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_protected_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_retry_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "advertised_privacy",
+      "importance": 0.0
+    },
+    {
+      "feature": "advertised_beacon_tu",
+      "importance": 0.0
+    },
+    {
+      "feature": "auth_algorithm",
+      "importance": 0.0
+    }
+  ],
+  "importance_method": "Normalized positive validation permutation importance (average precision)",
+  "artifact_sha256": "f37d7a9947d0562583edc9f79dcc75c40f84f5d9e64f9437501f2608e11c5b9c"
+}

@@ -1,0 +1,171 @@
+{
+  "all_error_gates_passed": true,
+  "artifact_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+  "comparisons": {
+    "new_rogue": {
+      "before": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7386363636363636,
+        "recall": 0.9219858156028369,
+        "f1": 0.8201892744479495,
+        "pr_auc_trapezoid": 0.8672053526029017,
+        "average_precision": 0.7923968189417206,
+        "confusion_matrix_tn_fp_fn_tp": [
+          195,
+          184,
+          44,
+          520
+        ]
+      },
+      "after": {
+        "rows": 943,
+        "positive_rows": 564,
+        "precision": 0.7521246458923513,
+        "recall": 0.9414893617021277,
+        "f1": 0.8362204724409449,
+        "pr_auc_trapezoid": 0.9191817570442411,
+        "average_precision": 0.9057162196829907,
+        "confusion_matrix_tn_fp_fn_tp": [
+          204,
+          175,
+          33,
+          531
+        ]
+      },
+      "passed": true
+    },
+    "new_beacon": {
+      "before": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2498,
+          1,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "rows": 2499,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2498,
+          1,
+          0,
+          0
+        ]
+      },
+      "passed": true
+    },
+    "awid_diagnostic": {
+      "before": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.973457199734572,
+        "recall": 1.0,
+        "f1": 0.9865501008742434,
+        "pr_auc_trapezoid": 0.9893262174783188,
+        "average_precision": 0.9786524349566378,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58402,
+          40,
+          0,
+          1467
+        ]
+      },
+      "after": {
+        "rows": 59909,
+        "positive_rows": 1467,
+        "precision": 0.973457199734572,
+        "recall": 1.0,
+        "f1": 0.9865501008742434,
+        "pr_auc_trapezoid": 0.9702080967212701,
+        "average_precision": 0.9698666556872417,
+        "confusion_matrix_tn_fp_fn_tp": [
+          58402,
+          40,
+          0,
+          1467
+        ]
+      },
+      "passed": true
+    },
+    "test_metrics": {
+      "before": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 0.9981060606060606,
+        "recall": 1.0,
+        "f1": 0.9990521327014218,
+        "pr_auc_trapezoid": 0.9990530303030303,
+        "average_precision": 0.9981060606060606,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1128,
+          1,
+          0,
+          527
+        ]
+      },
+      "after": {
+        "rows": 1656,
+        "positive_rows": 527,
+        "precision": 0.9981060606060606,
+        "recall": 1.0,
+        "f1": 0.9990521327014218,
+        "pr_auc_trapezoid": 0.9997751542610125,
+        "average_precision": 0.9997754736432364,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1128,
+          1,
+          0,
+          527
+        ]
+      },
+      "passed": true
+    },
+    "negative_control": {
+      "before": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          7450,
+          1080,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "rows": 8530,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          7602,
+          928,
+          0,
+          0
+        ]
+      },
+      "passed": true
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "scope": "ap_advertisements",
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte"
+  ],
+  "source": "AWID published impersonation category",
+  "comparison_rule": "Rescore both baseline and candidate on this same target; evil-only F1 is not comparable",
+  "training_counts": {
+    "normal": 53510,
+    "evil_twin": 3254,
+    "probe_response": 1558,
+    "cafe_latte": 801,
+    "beacon": 386
+  },
+  "sources": [
+    {
+      "source": "data/processed/detection_train.joblib",
+      "source_sha256": "56af9d5023149028b14fc854567eb06ed0092cab630dae75b4e43f4c01a986d9",
+      "mode": "awid-train",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 1218588,
+          "arp": 47974,
+          "cafe_latte": 32522,
+          "amok": 26946,
+          "deauthentication": 7955,
+          "authentication_request": 3500,
+          "evil_twin": 2201,
+          "probe_response": 1558,
+          "fragmentation": 598,
+          "beacon": 386
+        },
+        "validation": {
+          "normal": 302874,
+          "arp": 11623,
+          "cafe_latte": 10764,
+          "deauthentication": 2370,
+          "amok": 2105,
+          "beacon": 1299,
+          "evil_twin": 274,
+          "fragmentation": 102
+        }
+      }
+    },
+    {
+      "source": "data/raw/wpa3/evilTwin.pcap",
+      "source_sha256": "11807b431cce6b5087b8bf9890f99660323f242f5dabc843401826812798e632",
+      "mode": "wpa3",
+      "rssi_window": 100,
+      "behavior_window": 100,
+      "split": "30s blocks with 1s guards; mod5=3 validation; WPA3 mod5=4 test; AWID test continuous",
+      "counts": {
+        "train": {
+          "normal": 292413,
+          "evil_twin": 3957
+        },
+        "validation": {
+          "normal": 104429,
+          "evil_twin": 7447
+        },
+        "test": {
+          "normal": 96148,
+          "evil_twin": 527
+        }
+      },
+      "csv_sha256": "578ba6240cc8d4aae57454ff3a43b9cf54e55912ee4bfa76cbbd0a3c062725b0"
+    }
+  ],
+  "validation_gates": {
+    "precision_each_source": 0.95,
+    "recall_each_present_positive_family": 0.9,
+    "normal_false_positive_rate": 0.0001
+  },
+  "test_rows_fitted": 0,
+  "features": {
+    "portable": [
+      "rssi_dbm",
+      "frame_type",
+      "frame_subtype",
+      "rssi_window_count",
+      "rssi_std_db",
+      "rssi_delta_db",
+      "sequence_delta",
+      "sequence_gap",
+      "beacon_interval_delta_ns",
+      "ssid_mac_count_60s",
+      "frame_length",
+      "retry_flag",
+      "protected_flag",
+      "fragment_number",
+      "beacon_interval_tu",
+      "ess_flag",
+      "privacy_flag",
+      "qos_tid",
+      "to_ds",
+      "from_ds",
+      "power_management",
+      "more_fragments",
+      "more_data",
+      "duration_us",
+      "source_is_bssid",
+      "destination_is_bssid",
+      "destination_multicast",
+      "ssid_present"
+    ],
+    "behavior": [
+      "rssi_dbm",
+      "frame_type",
+      "frame_subtype",
+      "rssi_window_count",
+      "rssi_std_db",
+      "rssi_delta_db",
+      "sequence_delta",
+      "sequence_gap",
+      "beacon_interval_delta_ns",
+      "ssid_mac_count_60s",
+      "frame_length",
+      "retry_flag",
+      "protected_flag",
+      "fragment_number",
+      "beacon_interval_tu",
+      "ess_flag",
+      "privacy_flag",
+      "qos_tid",
+      "to_ds",
+      "from_ds",
+      "power_management",
+      "more_fragments",
+      "more_data",
+      "duration_us",
+      "source_is_bssid",
+      "destination_is_bssid",
+      "destination_multicast",
+      "ssid_present",
+      "ap_window_count",
+      "ap_window_span_s",
+      "ap_length_mean",
+      "ap_length_std",
+      "ap_unique_sources",
+      "ap_security_changes",
+      "ap_channel_changes",
+      "ap_beacon_interval_cv",
+      "ap_beacon_fraction",
+      "ap_probe_fraction",
+      "ap_authentication_fraction",
+      "ap_association_fraction",
+      "ap_deauth_fraction",
+      "ap_data_fraction",
+      "ap_protected_fraction",
+      "ap_retry_fraction",
+      "ap_broadcast_fraction",
+      "advertised_privacy",
+      "advertised_channel",
+      "advertised_beacon_tu",
+      "auth_algorithm"
+    ]
+  }
+}

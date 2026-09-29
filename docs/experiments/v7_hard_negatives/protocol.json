@@ -1,0 +1,8 @@
+{
+  "baseline_sha256": "2eed9cb24f21fbb453f18ea11924712b15d66fac0e8e8ab1fd4fcd75cf7d66ac",
+  "test_rows_fitted": 0,
+  "new_development": "Disasso train and validation blocks; its test blocks and complete Aggreattack reserved.",
+  "selection": "Full causal pipeline and validation-only decision threshold; no validation-source FP/FN increase.",
+  "aspirational_target": "FNR <= 5% and FPR <= 1% on each source, not a promised result.",
+  "limitations": "Previously consumed regression datasets; scenario labels are not verified rogue identities."
+}

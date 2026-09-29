@@ -1,0 +1,378 @@
+{
+  "format_version": 3,
+  "features": [
+    "rssi_dbm",
+    "frame_type",
+    "frame_subtype",
+    "rssi_window_count",
+    "rssi_std_db",
+    "rssi_delta_db",
+    "sequence_delta",
+    "sequence_gap",
+    "beacon_interval_delta_ns",
+    "ssid_mac_count_60s",
+    "frame_length",
+    "retry_flag",
+    "protected_flag",
+    "fragment_number",
+    "beacon_interval_tu",
+    "ess_flag",
+    "privacy_flag",
+    "qos_tid",
+    "to_ds",
+    "from_ds",
+    "power_management",
+    "more_fragments",
+    "more_data",
+    "duration_us",
+    "source_is_bssid",
+    "destination_is_bssid",
+    "destination_multicast",
+    "ssid_present",
+    "ap_window_count",
+    "ap_window_span_s",
+    "ap_length_mean",
+    "ap_length_std",
+    "ap_unique_sources",
+    "ap_security_changes",
+    "ap_channel_changes",
+    "ap_beacon_interval_cv",
+    "ap_beacon_fraction",
+    "ap_probe_fraction",
+    "ap_authentication_fraction",
+    "ap_association_fraction",
+    "ap_deauth_fraction",
+    "ap_data_fraction",
+    "ap_protected_fraction",
+    "ap_retry_fraction",
+    "ap_broadcast_fraction",
+    "advertised_privacy",
+    "advertised_channel",
+    "advertised_beacon_tu",
+    "auth_algorithm"
+  ],
+  "threshold": 0.9425838310813839,
+  "rssi_window": 100,
+  "behavior_window": 100,
+  "scope": "ap_advertisements",
+  "model_name": "v7-refined-hgb240_l31_positive1",
+  "selection": {
+    "name": "hgb240_l31_positive1",
+    "features": "behavior",
+    "threshold": 0.9425838310813839,
+    "utility": 0.8258029996476677,
+    "point": {
+      "mean_f1": 0.9117163966966281,
+      "min_precision": 0.967680608365019,
+      "min_recall": 0.5974178403755869,
+      "max_fpr": 0.03794642857142857
+    },
+    "seconds": 13.880008499952964,
+    "validation": {
+      "behavior_train": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9994128706118184,
+        "average_precision": 0.9994136858138167,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "behavior_wpa3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      },
+      "round2_rogue": {
+        "rows": 1300,
+        "positive_rows": 852,
+        "precision": 0.967680608365019,
+        "recall": 0.5974178403755869,
+        "f1": 0.7387518142235123,
+        "pr_auc_trapezoid": 0.9122884588273174,
+        "average_precision": 0.9123418700372243,
+        "confusion_matrix_tn_fp_fn_tp": [
+          431,
+          17,
+          343,
+          509
+        ]
+      },
+      "round2_beacon": {
+        "rows": 2476,
+        "positive_rows": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "pr_auc_trapezoid": null,
+        "average_precision": null,
+        "confusion_matrix_tn_fp_fn_tp": [
+          2476,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "training_metadata": {
+    "target_labels": [
+      "evil_twin",
+      "cafe_latte",
+      "hirte",
+      "rogue_ap"
+    ],
+    "scope": "ap_advertisements",
+    "train_counts": {
+      "behavior_train": {
+        "normal": 107830,
+        "evil_twin": 2162,
+        "probe_response": 1558,
+        "cafe_latte": 801,
+        "beacon": 386
+      },
+      "behavior_wpa3": {
+        "normal": 3510,
+        "evil_twin": 1092
+      },
+      "round2_beacon": {
+        "beacon_flood": 5281,
+        "normal": 2844
+      },
+      "round2_rogue": {
+        "normal": 1866,
+        "rogue_ap": 1551
+      }
+    },
+    "all_development_negatives_retained": true,
+    "test_rows_fitted": 0,
+    "selection": "Validation utility = mean source F1 - .6 max source FPR - .25 precision deficit below .90 - .25 recall deficit below .85",
+    "evaluation_limit": "Previously inspected same-session test captures; regression evidence only."
+  },
+  "target_labels": [
+    "evil_twin",
+    "cafe_latte",
+    "hirte",
+    "rogue_ap"
+  ],
+  "target": "AP impersonation advertisements including publisher RogueAP labels",
+  "positive_label": "Impersonation",
+  "attack_type": "suspected_rogue_ap",
+  "score_semantics": "Uncalibrated classifier score, not verified AP identity",
+  "feature_importance": [
+    {
+      "feature": "frame_length",
+      "importance": 0.3073703431314493
+    },
+    {
+      "feature": "advertised_channel",
+      "importance": 0.29780671337784187
+    },
+    {
+      "feature": "rssi_dbm",
+      "importance": 0.28373824167497574
+    },
+    {
+      "feature": "ap_window_span_s",
+      "importance": 0.06253391542965225
+    },
+    {
+      "feature": "ap_length_std",
+      "importance": 0.031230516952769214
+    },
+    {
+      "feature": "ap_beacon_interval_cv",
+      "importance": 0.004217357925385818
+    },
+    {
+      "feature": "ap_data_fraction",
+      "importance": 0.0037938827553598516
+    },
+    {
+      "feature": "ssid_mac_count_60s",
+      "importance": 0.003196401704606204
+    },
+    {
+      "feature": "ap_probe_fraction",
+      "importance": 0.0016005908062443756
+    },
+    {
+      "feature": "retry_flag",
+      "importance": 0.001567074970953244
+    },
+    {
+      "feature": "frame_subtype",
+      "importance": 0.0008522609905989893
+    },
+    {
+      "feature": "duration_us",
+      "importance": 0.0005610857520061501
+    },
+    {
+      "feature": "ap_broadcast_fraction",
+      "importance": 0.0005595466031620112
+    },
+    {
+      "feature": "rssi_window_count",
+      "importance": 0.00046586657130896905
+    },
+    {
+      "feature": "ap_security_changes",
+      "importance": 0.0003198374547499527
+    },
+    {
+      "feature": "sequence_delta",
+      "importance": 0.00017797687246726555
+    },
+    {
+      "feature": "privacy_flag",
+      "importance": 5.6982703269034795e-06
+    },
+    {
+      "feature": "ap_channel_changes",
+      "importance": 2.6887561417713493e-06
+    },
+    {
+      "feature": "frame_type",
+      "importance": 0.0
+    },
+    {
+      "feature": "rssi_std_db",
+      "importance": 0.0
+    },
+    {
+      "feature": "rssi_delta_db",
+      "importance": 0.0
+    },
+    {
+      "feature": "sequence_gap",
+      "importance": 0.0
+    },
+    {
+      "feature": "beacon_interval_delta_ns",
+      "importance": 0.0
+    },
+    {
+      "feature": "protected_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "fragment_number",
+      "importance": 0.0
+    },
+    {
+      "feature": "beacon_interval_tu",
+      "importance": 0.0
+    },
+    {
+      "feature": "ess_flag",
+      "importance": 0.0
+    },
+    {
+      "feature": "qos_tid",
+      "importance": 0.0
+    },
+    {
+      "feature": "to_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "from_ds",
+      "importance": 0.0
+    },
+    {
+      "feature": "power_management",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_fragments",
+      "importance": 0.0
+    },
+    {
+      "feature": "more_data",
+      "importance": 0.0
+    },
+    {
+      "feature": "source_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "destination_is_bssid",
+      "importance": 0.0
+    },
+    {
+      "feature": "destination_multicast",
+      "importance": 0.0
+    },
+    {
+      "feature": "ssid_present",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_window_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_length_mean",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_unique_sources",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_beacon_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_authentication_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_association_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_deauth_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_protected_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "ap_retry_fraction",
+      "importance": 0.0
+    },
+    {
+      "feature": "advertised_privacy",
+      "importance": 0.0
+    },
+    {
+      "feature": "advertised_beacon_tu",
+      "importance": 0.0
+    },
+    {
+      "feature": "auth_algorithm",
+      "importance": 0.0
+    }
+  ],
+  "importance_method": "Validation permutation average-precision decrease (positive values normalized)",
+  "artifact_sha256": "b38e6664309959587c4fd9d1084b14a4c77b78f99a09ba27673becca2d6ca8f2"
+}

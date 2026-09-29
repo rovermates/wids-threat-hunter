@@ -1,0 +1,785 @@
+{
+  "id": "awid2-public-155-v1",
+  "status": "Cross-checked public compatibility schema; official confirmation pending",
+  "sources": [
+    "https://github.com/MahamdiAmine/AWID-network-anomaly-detection-and-attack-classification-using-ML/blob/master/col_names.txt",
+    "https://github.com/Bee-Mar/AWID-Intrusion-Detection/blob/master/resources/col_names.txt"
+  ],
+  "fields": [
+    {
+      "position": 1,
+      "source_name": "frame.interface_id",
+      "name": "frame.interface_id"
+    },
+    {
+      "position": 2,
+      "source_name": "frame.dlt",
+      "name": "frame.dlt"
+    },
+    {
+      "position": 3,
+      "source_name": "frame.offset_shift",
+      "name": "frame.offset_shift"
+    },
+    {
+      "position": 4,
+      "source_name": "frame.time_epoch",
+      "name": "frame.time_epoch"
+    },
+    {
+      "position": 5,
+      "source_name": "frame.time_delta",
+      "name": "frame.time_delta"
+    },
+    {
+      "position": 6,
+      "source_name": "frame.time_delta_displayed",
+      "name": "frame.time_delta_displayed"
+    },
+    {
+      "position": 7,
+      "source_name": "frame.time_relative",
+      "name": "frame.time_relative"
+    },
+    {
+      "position": 8,
+      "source_name": "frame.len",
+      "name": "frame.len"
+    },
+    {
+      "position": 9,
+      "source_name": "frame.cap_len",
+      "name": "frame.cap_len"
+    },
+    {
+      "position": 10,
+      "source_name": "frame.marked",
+      "name": "frame.marked"
+    },
+    {
+      "position": 11,
+      "source_name": "frame.ignored",
+      "name": "frame.ignored"
+    },
+    {
+      "position": 12,
+      "source_name": "radiotap.version",
+      "name": "radiotap.version"
+    },
+    {
+      "position": 13,
+      "source_name": "radiotap.pad",
+      "name": "radiotap.pad"
+    },
+    {
+      "position": 14,
+      "source_name": "radiotap.length",
+      "name": "radiotap.length"
+    },
+    {
+      "position": 15,
+      "source_name": "radiotap.present.tsft",
+      "name": "radiotap.present.tsft"
+    },
+    {
+      "position": 16,
+      "source_name": "radiotap.present.flags",
+      "name": "radiotap.present.flags"
+    },
+    {
+      "position": 17,
+      "source_name": "radiotap.present.rate",
+      "name": "radiotap.present.rate"
+    },
+    {
+      "position": 18,
+      "source_name": "radiotap.present.channel",
+      "name": "radiotap.present.channel"
+    },
+    {
+      "position": 19,
+      "source_name": "radiotap.present.fhss",
+      "name": "radiotap.present.fhss"
+    },
+    {
+      "position": 20,
+      "source_name": "radiotap.present.dbm_antsignal",
+      "name": "radiotap.present.dbm_antsignal"
+    },
+    {
+      "position": 21,
+      "source_name": "radiotap.present.dbm_antnoise",
+      "name": "radiotap.present.dbm_antnoise"
+    },
+    {
+      "position": 22,
+      "source_name": "radiotap.present.lock_quality",
+      "name": "radiotap.present.lock_quality"
+    },
+    {
+      "position": 23,
+      "source_name": "radiotap.present.tx_attenuation",
+      "name": "radiotap.present.tx_attenuation"
+    },
+    {
+      "position": 24,
+      "source_name": "radiotap.present.db_tx_attenuation",
+      "name": "radiotap.present.db_tx_attenuation"
+    },
+    {
+      "position": 25,
+      "source_name": "radiotap.present.dbm_tx_power",
+      "name": "radiotap.present.dbm_tx_power"
+    },
+    {
+      "position": 26,
+      "source_name": "radiotap.present.antenna",
+      "name": "radiotap.present.antenna"
+    },
+    {
+      "position": 27,
+      "source_name": "radiotap.present.db_antsignal",
+      "name": "radiotap.present.db_antsignal"
+    },
+    {
+      "position": 28,
+      "source_name": "radiotap.present.db_antnoise",
+      "name": "radiotap.present.db_antnoise"
+    },
+    {
+      "position": 29,
+      "source_name": "radiotap.present.rxflags",
+      "name": "radiotap.present.rxflags"
+    },
+    {
+      "position": 30,
+      "source_name": "radiotap.present.xchannel",
+      "name": "radiotap.present.xchannel"
+    },
+    {
+      "position": 31,
+      "source_name": "radiotap.present.mcs",
+      "name": "radiotap.present.mcs"
+    },
+    {
+      "position": 32,
+      "source_name": "radiotap.present.ampdu",
+      "name": "radiotap.present.ampdu"
+    },
+    {
+      "position": 33,
+      "source_name": "radiotap.present.vht",
+      "name": "radiotap.present.vht"
+    },
+    {
+      "position": 34,
+      "source_name": "radiotap.present.reserved",
+      "name": "radiotap.present.reserved"
+    },
+    {
+      "position": 35,
+      "source_name": "radiotap.present.rtap_ns",
+      "name": "radiotap.present.rtap_ns"
+    },
+    {
+      "position": 36,
+      "source_name": "radiotap.present.vendor_ns",
+      "name": "radiotap.present.vendor_ns"
+    },
+    {
+      "position": 37,
+      "source_name": "radiotap.present.ext",
+      "name": "radiotap.present.ext"
+    },
+    {
+      "position": 38,
+      "source_name": "radiotap.mactime",
+      "name": "radiotap.mactime"
+    },
+    {
+      "position": 39,
+      "source_name": "radiotap.flags.cfp",
+      "name": "radiotap.flags.cfp"
+    },
+    {
+      "position": 40,
+      "source_name": "radiotap.flags.preamble",
+      "name": "radiotap.flags.preamble"
+    },
+    {
+      "position": 41,
+      "source_name": "radiotap.flags.wep",
+      "name": "radiotap.flags.wep"
+    },
+    {
+      "position": 42,
+      "source_name": "radiotap.flags.frag",
+      "name": "radiotap.flags.frag"
+    },
+    {
+      "position": 43,
+      "source_name": "radiotap.flags.fcs",
+      "name": "radiotap.flags.fcs"
+    },
+    {
+      "position": 44,
+      "source_name": "radiotap.flags.datapad",
+      "name": "radiotap.flags.datapad"
+    },
+    {
+      "position": 45,
+      "source_name": "radiotap.flags.badfcs",
+      "name": "radiotap.flags.badfcs"
+    },
+    {
+      "position": 46,
+      "source_name": "radiotap.flags.shortgi",
+      "name": "radiotap.flags.shortgi"
+    },
+    {
+      "position": 47,
+      "source_name": "radiotap.datarate",
+      "name": "radiotap.datarate"
+    },
+    {
+      "position": 48,
+      "source_name": "radiotap.channel.freq",
+      "name": "radiotap.channel.freq"
+    },
+    {
+      "position": 49,
+      "source_name": "radiotap.channel.type.turbo",
+      "name": "radiotap.channel.type.turbo"
+    },
+    {
+      "position": 50,
+      "source_name": "radiotap.channel.type.cck",
+      "name": "radiotap.channel.type.cck"
+    },
+    {
+      "position": 51,
+      "source_name": "radiotap.channel.type.ofdm",
+      "name": "radiotap.channel.type.ofdm"
+    },
+    {
+      "position": 52,
+      "source_name": "radiotap.channel.type.2ghz",
+      "name": "radiotap.channel.type.2ghz"
+    },
+    {
+      "position": 53,
+      "source_name": "radiotap.channel.type.5ghz",
+      "name": "radiotap.channel.type.5ghz"
+    },
+    {
+      "position": 54,
+      "source_name": "radiotap.channel.type.passive",
+      "name": "radiotap.channel.type.passive"
+    },
+    {
+      "position": 55,
+      "source_name": "radiotap.channel.type.dynamic",
+      "name": "radiotap.channel.type.dynamic"
+    },
+    {
+      "position": 56,
+      "source_name": "radiotap.channel.type.gfsk",
+      "name": "radiotap.channel.type.gfsk"
+    },
+    {
+      "position": 57,
+      "source_name": "radiotap.channel.type.gsm",
+      "name": "radiotap.channel.type.gsm"
+    },
+    {
+      "position": 58,
+      "source_name": "radiotap.channel.type.sturbo",
+      "name": "radiotap.channel.type.sturbo"
+    },
+    {
+      "position": 59,
+      "source_name": "radiotap.channel.type.half",
+      "name": "radiotap.channel.type.half"
+    },
+    {
+      "position": 60,
+      "source_name": "radiotap.channel.type.quarter",
+      "name": "radiotap.channel.type.quarter"
+    },
+    {
+      "position": 61,
+      "source_name": "radiotap.dbm_antsignal",
+      "name": "radiotap.dbm_antsignal"
+    },
+    {
+      "position": 62,
+      "source_name": "radiotap.antenna",
+      "name": "radiotap.antenna"
+    },
+    {
+      "position": 63,
+      "source_name": "radiotap.rxflags.badplcp",
+      "name": "radiotap.rxflags.badplcp"
+    },
+    {
+      "position": 64,
+      "source_name": "wlan.fc.type_subtype",
+      "name": "wlan.fc.type_subtype"
+    },
+    {
+      "position": 65,
+      "source_name": "wlan.fc.version",
+      "name": "wlan.fc.version"
+    },
+    {
+      "position": 66,
+      "source_name": "wlan.fc.type",
+      "name": "wlan.fc.type"
+    },
+    {
+      "position": 67,
+      "source_name": "wlan.fc.subtype",
+      "name": "wlan.fc.subtype"
+    },
+    {
+      "position": 68,
+      "source_name": "wlan.fc.ds",
+      "name": "wlan.fc.ds"
+    },
+    {
+      "position": 69,
+      "source_name": "wlan.fc.frag",
+      "name": "wlan.fc.frag"
+    },
+    {
+      "position": 70,
+      "source_name": "wlan.fc.retry",
+      "name": "wlan.fc.retry"
+    },
+    {
+      "position": 71,
+      "source_name": "wlan.fc.pwrmgt",
+      "name": "wlan.fc.pwrmgt"
+    },
+    {
+      "position": 72,
+      "source_name": "wlan.fc.moredata",
+      "name": "wlan.fc.moredata"
+    },
+    {
+      "position": 73,
+      "source_name": "wlan.fc.protected",
+      "name": "wlan.fc.protected"
+    },
+    {
+      "position": 74,
+      "source_name": "wlan.fc.order",
+      "name": "wlan.fc.order"
+    },
+    {
+      "position": 75,
+      "source_name": "wlan.duration",
+      "name": "wlan.duration"
+    },
+    {
+      "position": 76,
+      "source_name": "wlan.ra",
+      "name": "wlan.ra"
+    },
+    {
+      "position": 77,
+      "source_name": "wlan.da",
+      "name": "wlan.da"
+    },
+    {
+      "position": 78,
+      "source_name": "wlan.ta",
+      "name": "wlan.ta"
+    },
+    {
+      "position": 79,
+      "source_name": "wlan.sa",
+      "name": "wlan.sa"
+    },
+    {
+      "position": 80,
+      "source_name": "wlan.bssid",
+      "name": "wlan.bssid"
+    },
+    {
+      "position": 81,
+      "source_name": "wlan.frag",
+      "name": "wlan.frag"
+    },
+    {
+      "position": 82,
+      "source_name": "wlan.seq",
+      "name": "wlan.seq"
+    },
+    {
+      "position": 83,
+      "source_name": "wlan.bar.type",
+      "name": "wlan.bar.type"
+    },
+    {
+      "position": 84,
+      "source_name": "wlan.ba.control.ackpolicy",
+      "name": "wlan.ba.control.ackpolicy"
+    },
+    {
+      "position": 85,
+      "source_name": "wlan.ba.control.multitid",
+      "name": "wlan.ba.control.multitid"
+    },
+    {
+      "position": 86,
+      "source_name": "wlan.ba.control.cbitmap",
+      "name": "wlan.ba.control.cbitmap"
+    },
+    {
+      "position": 87,
+      "source_name": "wlan.bar.compressed.tidinfo",
+      "name": "wlan.bar.compressed.tidinfo"
+    },
+    {
+      "position": 88,
+      "source_name": "wlan.ba.bm",
+      "name": "wlan.ba.bm"
+    },
+    {
+      "position": 89,
+      "source_name": "wlan.fcs_good",
+      "name": "wlan.fcs_good"
+    },
+    {
+      "position": 90,
+      "source_name": "wlan_mgt.fixed.capabilities.ess",
+      "name": "wlan_mgt.fixed.capabilities.ess"
+    },
+    {
+      "position": 91,
+      "source_name": "wlan_mgt.fixed.capabilities.ibss",
+      "name": "wlan_mgt.fixed.capabilities.ibss"
+    },
+    {
+      "position": 92,
+      "source_name": "wlan_mgt.fixed.capabilities.cfpoll.ap",
+      "name": "wlan_mgt.fixed.capabilities.cfpoll.ap"
+    },
+    {
+      "position": 93,
+      "source_name": "wlan_mgt.fixed.capabilities.privacy",
+      "name": "wlan_mgt.fixed.capabilities.privacy"
+    },
+    {
+      "position": 94,
+      "source_name": "wlan_mgt.fixed.capabilities.preamble",
+      "name": "wlan_mgt.fixed.capabilities.preamble"
+    },
+    {
+      "position": 95,
+      "source_name": "wlan_mgt.fixed.capabilities.pbcc",
+      "name": "wlan_mgt.fixed.capabilities.pbcc"
+    },
+    {
+      "position": 96,
+      "source_name": "wlan_mgt.fixed.capabilities.agility",
+      "name": "wlan_mgt.fixed.capabilities.agility"
+    },
+    {
+      "position": 97,
+      "source_name": "wlan_mgt.fixed.capabilities.spec_man",
+      "name": "wlan_mgt.fixed.capabilities.spec_man"
+    },
+    {
+      "position": 98,
+      "source_name": "wlan_mgt.fixed.capabilities.short_slot_time",
+      "name": "wlan_mgt.fixed.capabilities.short_slot_time"
+    },
+    {
+      "position": 99,
+      "source_name": "wlan_mgt.fixed.capabilities.apsd",
+      "name": "wlan_mgt.fixed.capabilities.apsd"
+    },
+    {
+      "position": 100,
+      "source_name": "wlan_mgt.fixed.capabilities.radio_measurement",
+      "name": "wlan_mgt.fixed.capabilities.radio_measurement"
+    },
+    {
+      "position": 101,
+      "source_name": "wlan_mgt.fixed.capabilities.dsss_ofdm",
+      "name": "wlan_mgt.fixed.capabilities.dsss_ofdm"
+    },
+    {
+      "position": 102,
+      "source_name": "wlan_mgt.fixed.capabilities.del_blk_ack",
+      "name": "wlan_mgt.fixed.capabilities.del_blk_ack"
+    },
+    {
+      "position": 103,
+      "source_name": "wlan_mgt.fixed.capabilities.imm_blk_ack",
+      "name": "wlan_mgt.fixed.capabilities.imm_blk_ack"
+    },
+    {
+      "position": 104,
+      "source_name": "wlan_mgt.fixed.listen_ival",
+      "name": "wlan_mgt.fixed.listen_ival"
+    },
+    {
+      "position": 105,
+      "source_name": "wlan_mgt.fixed.current_ap",
+      "name": "wlan_mgt.fixed.current_ap"
+    },
+    {
+      "position": 106,
+      "source_name": "wlan_mgt.fixed.status_code",
+      "name": "wlan_mgt.fixed.status_code"
+    },
+    {
+      "position": 107,
+      "source_name": "wlan_mgt.fixed.timestamp",
+      "name": "wlan_mgt.fixed.timestamp"
+    },
+    {
+      "position": 108,
+      "source_name": "wlan_mgt.fixed.beacon",
+      "name": "wlan_mgt.fixed.beacon"
+    },
+    {
+      "position": 109,
+      "source_name": "wlan_mgt.fixed.aid",
+      "name": "wlan_mgt.fixed.aid"
+    },
+    {
+      "position": 110,
+      "source_name": "wlan_mgt.fixed.reason_code",
+      "name": "wlan_mgt.fixed.reason_code"
+    },
+    {
+      "position": 111,
+      "source_name": "wlan_mgt.fixed.auth.alg",
+      "name": "wlan_mgt.fixed.auth.alg"
+    },
+    {
+      "position": 112,
+      "source_name": "wlan_mgt.fixed.auth_seq",
+      "name": "wlan_mgt.fixed.auth_seq"
+    },
+    {
+      "position": 113,
+      "source_name": "wlan_mgt.fixed.category_code",
+      "name": "wlan_mgt.fixed.category_code"
+    },
+    {
+      "position": 114,
+      "source_name": "wlan_mgt.fixed.htact",
+      "name": "wlan_mgt.fixed.htact"
+    },
+    {
+      "position": 115,
+      "source_name": "wlan_mgt.fixed.chanwidth",
+      "name": "wlan_mgt.fixed.chanwidth"
+    },
+    {
+      "position": 116,
+      "source_name": "wlan_mgt.fixed.fragment",
+      "name": "wlan_mgt.fixed.fragment"
+    },
+    {
+      "position": 117,
+      "source_name": "wlan_mgt.fixed.sequence",
+      "name": "wlan_mgt.fixed.sequence"
+    },
+    {
+      "position": 118,
+      "source_name": "wlan_mgt.tagged.all",
+      "name": "wlan_mgt.tagged.all"
+    },
+    {
+      "position": 119,
+      "source_name": "wlan_mgt.ssid",
+      "name": "wlan_mgt.ssid"
+    },
+    {
+      "position": 120,
+      "source_name": "wlan_mgt.ds.current_channel",
+      "name": "wlan_mgt.ds.current_channel"
+    },
+    {
+      "position": 121,
+      "source_name": "wlan_mgt.tim.dtim_count",
+      "name": "wlan_mgt.tim.dtim_count"
+    },
+    {
+      "position": 122,
+      "source_name": "wlan_mgt.tim.dtim_period",
+      "name": "wlan_mgt.tim.dtim_period"
+    },
+    {
+      "position": 123,
+      "source_name": "wlan_mgt.tim.bmapctl.multicast",
+      "name": "wlan_mgt.tim.bmapctl.multicast"
+    },
+    {
+      "position": 124,
+      "source_name": "wlan_mgt.tim.bmapctl.offset",
+      "name": "wlan_mgt.tim.bmapctl.offset"
+    },
+    {
+      "position": 125,
+      "source_name": "wlan_mgt.country_info.environment",
+      "name": "wlan_mgt.country_info.environment"
+    },
+    {
+      "position": 126,
+      "source_name": "wlan_mgt.rsn.version",
+      "name": "wlan_mgt.rsn.version"
+    },
+    {
+      "position": 127,
+      "source_name": "wlan_mgt.rsn.gcs.type",
+      "name": "wlan_mgt.rsn.gcs.type"
+    },
+    {
+      "position": 128,
+      "source_name": "wlan_mgt.rsn.pcs.count",
+      "name": "wlan_mgt.rsn.pcs.count"
+    },
+    {
+      "position": 129,
+      "source_name": "wlan_mgt.rsn.akms.count",
+      "name": "wlan_mgt.rsn.akms.count"
+    },
+    {
+      "position": 130,
+      "source_name": "wlan_mgt.rsn.akms.type",
+      "name": "wlan_mgt.rsn.akms.type"
+    },
+    {
+      "position": 131,
+      "source_name": "wlan_mgt.rsn.capabilities.preauth",
+      "name": "wlan_mgt.rsn.capabilities.preauth"
+    },
+    {
+      "position": 132,
+      "source_name": "wlan_mgt.rsn.capabilities.no_pairwise",
+      "name": "wlan_mgt.rsn.capabilities.no_pairwise"
+    },
+    {
+      "position": 133,
+      "source_name": "wlan_mgt.rsn.capabilities.ptksa_replay_counter",
+      "name": "wlan_mgt.rsn.capabilities.ptksa_replay_counter"
+    },
+    {
+      "position": 134,
+      "source_name": "wlan_mgt.rsn.capabilities.gtksa_replay_counter",
+      "name": "wlan_mgt.rsn.capabilities.gtksa_replay_counter"
+    },
+    {
+      "position": 135,
+      "source_name": "wlan_mgt.rsn.capabilities.mfpr",
+      "name": "wlan_mgt.rsn.capabilities.mfpr"
+    },
+    {
+      "position": 136,
+      "source_name": "wlan_mgt.rsn.capabilities.mfpc",
+      "name": "wlan_mgt.rsn.capabilities.mfpc"
+    },
+    {
+      "position": 137,
+      "source_name": "wlan_mgt.rsn.capabilities.peerkey",
+      "name": "wlan_mgt.rsn.capabilities.peerkey"
+    },
+    {
+      "position": 138,
+      "source_name": "wlan_mgt.tcprep.trsmt_pow",
+      "name": "wlan_mgt.tcprep.trsmt_pow"
+    },
+    {
+      "position": 139,
+      "source_name": "wlan_mgt.tcprep.link_mrg",
+      "name": "wlan_mgt.tcprep.link_mrg"
+    },
+    {
+      "position": 140,
+      "source_name": "wlan.wep.iv",
+      "name": "wlan.wep.iv"
+    },
+    {
+      "position": 141,
+      "source_name": "wlan.wep.key",
+      "name": "wlan.wep.key"
+    },
+    {
+      "position": 142,
+      "source_name": "wlan.wep.icv",
+      "name": "wlan.wep.icv"
+    },
+    {
+      "position": 143,
+      "source_name": "wlan.tkip.extiv",
+      "name": "wlan.tkip.extiv"
+    },
+    {
+      "position": 144,
+      "source_name": "wlan.ccmp.extiv",
+      "name": "wlan.ccmp.extiv"
+    },
+    {
+      "position": 145,
+      "source_name": "wlan.qos.tid",
+      "name": "wlan.qos.tid"
+    },
+    {
+      "position": 146,
+      "source_name": "wlan.qos.priority",
+      "name": "wlan.qos.priority"
+    },
+    {
+      "position": 147,
+      "source_name": "wlan.qos.eosp",
+      "name": "wlan.qos.eosp"
+    },
+    {
+      "position": 148,
+      "source_name": "wlan.qos.ack",
+      "name": "wlan.qos.ack"
+    },
+    {
+      "position": 149,
+      "source_name": "wlan.qos.amsdupresent",
+      "name": "wlan.qos.amsdupresent"
+    },
+    {
+      "position": 150,
+      "source_name": "wlan.qos.buf_state_indicated",
+      "name": "wlan.qos.buf_state_indicated"
+    },
+    {
+      "position": 151,
+      "source_name": "wlan.qos.bit4",
+      "name": "wlan.qos.bit4"
+    },
+    {
+      "position": 152,
+      "source_name": "wlan.qos.txop_dur_req",
+      "name": "wlan.qos.txop_dur_req"
+    },
+    {
+      "position": 153,
+      "source_name": "wlan.qos.buf_state_indicated",
+      "name": "wlan.qos.buf_state_indicated__2"
+    },
+    {
+      "position": 154,
+      "source_name": "data.len",
+      "name": "data.len"
+    },
+    {
+      "position": 155,
+      "source_name": "class",
+      "name": "class"
+    }
+  ]
+}

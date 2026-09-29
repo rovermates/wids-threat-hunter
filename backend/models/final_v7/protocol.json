@@ -1,0 +1,71 @@
+{
+  "selection": "Validation only; original minimum target-family recall retained; mean F1 minus .2 max source FPR",
+  "test_rows_fitted": 0,
+  "component_models": [
+    "additional_captures_v7",
+    "refined_v7"
+  ],
+  "iteration_note": "Two consumed-test regressions motivated confirmation design; adaptive research evidence, not a blind test.",
+  "development_baseline": {
+    "behavior_train": {
+      "rows": 28769,
+      "positive_rows": 542,
+      "precision": 0.9818840579710145,
+      "recall": 1.0,
+      "f1": 0.9908592321755028,
+      "pr_auc_trapezoid": 0.9999058992146612,
+      "average_precision": 0.9999060211942044,
+      "confusion_matrix_tn_fp_fn_tp": [
+        28217,
+        10,
+        0,
+        542
+      ]
+    },
+    "behavior_wpa3": {
+      "rows": 1463,
+      "positive_rows": 374,
+      "precision": 0.9946808510638298,
+      "recall": 1.0,
+      "f1": 0.9973333333333333,
+      "pr_auc_trapezoid": 1.0,
+      "average_precision": 1.0,
+      "confusion_matrix_tn_fp_fn_tp": [
+        1087,
+        2,
+        0,
+        374
+      ]
+    },
+    "round2_rogue": {
+      "rows": 1300,
+      "positive_rows": 852,
+      "precision": 0.7685774946921444,
+      "recall": 0.8497652582159625,
+      "f1": 0.8071348940914158,
+      "pr_auc_trapezoid": 0.9147588028795008,
+      "average_precision": 0.9148246822341377,
+      "confusion_matrix_tn_fp_fn_tp": [
+        230,
+        218,
+        128,
+        724
+      ]
+    },
+    "round2_beacon": {
+      "rows": 2476,
+      "positive_rows": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "pr_auc_trapezoid": null,
+      "average_precision": null,
+      "confusion_matrix_tn_fp_fn_tp": [
+        2476,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "round2_rogue-attack-block24.pcap",
+    "advertisements": 119,
+    "all_features_and_scores_match": true
+  },
+  {
+    "file": "round2_rogue-attack-second-block14.pcap",
+    "advertisements": 353,
+    "all_features_and_scores_match": true
+  },
+  {
+    "file": "round2_rogue-normal-block4.pcap",
+    "advertisements": 133,
+    "all_features_and_scores_match": true
+  },
+  {
+    "file": "round2_beacon-attack-block9.pcap",
+    "advertisements": 1428,
+    "all_features_and_scores_match": true
+  },
+  {
+    "file": "round2_beacon-normal-block4.pcap",
+    "advertisements": 187,
+    "all_features_and_scores_match": true
+  }
+]

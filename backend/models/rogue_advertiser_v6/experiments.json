@@ -1,0 +1,182 @@
+[
+  {
+    "model": "rf_impersonation",
+    "feature_set": "portable",
+    "threshold": 0.41323989513039655,
+    "gates_met": true,
+    "operating_point": {
+      "mean_f1": 0.997738707113198,
+      "minimum_family_recall": 0.9946524064171123,
+      "minimum_precision": 0.9963235294117647,
+      "maximum_normal_false_positive_rate": 3.7136066547831256e-05
+    },
+    "validation": {
+      "AWID": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9963235294117647,
+        "recall": 1.0,
+        "f1": 0.998158379373849,
+        "pr_auc_trapezoid": 0.9996135315034169,
+        "average_precision": 0.9996056609897981,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28225,
+          2,
+          0,
+          542
+        ]
+      },
+      "WPA3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 0.9946524064171123,
+        "f1": 0.9973190348525469,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          2,
+          372
+        ]
+      }
+    },
+    "train_seconds": 1.5008443999977317
+  },
+  {
+    "model": "hist_impersonation",
+    "feature_set": "portable",
+    "threshold": 0.31897061294052387,
+    "gates_met": true,
+    "operating_point": {
+      "mean_f1": 0.9990791896869244,
+      "minimum_family_recall": 1.0,
+      "minimum_precision": 0.9963235294117647,
+      "maximum_normal_false_positive_rate": 3.7136066547831256e-05
+    },
+    "validation": {
+      "AWID": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9963235294117647,
+        "recall": 1.0,
+        "f1": 0.998158379373849,
+        "pr_auc_trapezoid": 0.9977734454857345,
+        "average_precision": 0.996889558453762,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28225,
+          2,
+          0,
+          542
+        ]
+      },
+      "WPA3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      }
+    },
+    "train_seconds": 3.085161099996185
+  },
+  {
+    "model": "rf_impersonation",
+    "feature_set": "behavior",
+    "threshold": 0.3347945601851852,
+    "gates_met": true,
+    "operating_point": {
+      "mean_f1": 0.9986200551977921,
+      "minimum_family_recall": 1.0,
+      "minimum_precision": 0.9944954128440368,
+      "maximum_normal_false_positive_rate": 7.427213309566251e-05
+    },
+    "validation": {
+      "AWID": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.9944954128440368,
+        "recall": 1.0,
+        "f1": 0.9972401103955841,
+        "pr_auc_trapezoid": 0.9981982247062648,
+        "average_precision": 0.9981852864081482,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28224,
+          3,
+          0,
+          542
+        ]
+      },
+      "WPA3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      }
+    },
+    "train_seconds": 1.9145846999890637
+  },
+  {
+    "model": "hist_impersonation",
+    "feature_set": "behavior",
+    "threshold": 0.9990183341199669,
+    "gates_met": true,
+    "operating_point": {
+      "mean_f1": 0.9995391705069125,
+      "minimum_family_recall": 1.0,
+      "minimum_precision": 0.998158379373849,
+      "maximum_normal_false_positive_rate": 3.7136066547831256e-05
+    },
+    "validation": {
+      "AWID": {
+        "rows": 28769,
+        "positive_rows": 542,
+        "precision": 0.998158379373849,
+        "recall": 1.0,
+        "f1": 0.9990783410138249,
+        "pr_auc_trapezoid": 0.9995737973701744,
+        "average_precision": 0.9995745356570247,
+        "confusion_matrix_tn_fp_fn_tp": [
+          28226,
+          1,
+          0,
+          542
+        ]
+      },
+      "WPA3": {
+        "rows": 1463,
+        "positive_rows": 374,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "pr_auc_trapezoid": 1.0,
+        "average_precision": 1.0,
+        "confusion_matrix_tn_fp_fn_tp": [
+          1089,
+          0,
+          0,
+          374
+        ]
+      }
+    },
+    "train_seconds": 7.084730300004594
+  }
+]

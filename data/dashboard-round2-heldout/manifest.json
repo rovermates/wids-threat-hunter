@@ -1,0 +1,104 @@
+[
+  {
+    "file": "round2_rogue-attack-block24.pcap",
+    "sha256": "a16a881b19c1bcb837525e12dba52e1d5322ddd4e64b1ba0fca3bdc0e7d70081",
+    "bytes": 10833443,
+    "source": "RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "source_packet_range": [
+      323721,
+      338261
+    ],
+    "block": 24,
+    "partition": "heldout; never fitted or used for threshold selection",
+    "label_counts": {
+      "rogue_ap": 14541
+    },
+    "advertisement_label_counts": {
+      "rogue_ap": 119
+    },
+    "note": "Same-session/device blocked holdout, not independent capture. Contiguous raw packet range with original timestamps and bytes."
+  },
+  {
+    "file": "round2_rogue-attack-second-block14.pcap",
+    "sha256": "bd551630f8f1e7adde8efbb528ebe742188bd1b74ab5e0862f1b374820ee44d9",
+    "bytes": 3627254,
+    "source": "RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "source_packet_range": [
+      192235,
+      205655
+    ],
+    "block": 14,
+    "partition": "heldout; never fitted or used for threshold selection",
+    "label_counts": {
+      "rogue_ap": 13421
+    },
+    "advertisement_label_counts": {
+      "rogue_ap": 353
+    },
+    "note": "Same-session/device blocked holdout, not independent capture. Contiguous raw packet range with original timestamps and bytes."
+  },
+  {
+    "file": "round2_rogue-normal-block4.pcap",
+    "sha256": "760483da37d7cece23329659e2695d4b48d6445bf20a17d6093f85cdd5f9c323",
+    "bytes": 4413335,
+    "source": "RogueAP.pcap",
+    "source_sha256": "71feaf8ade1ec008c32b17018a5fc32a6b7acbf1a504b8fff35ce27fce79a54a",
+    "source_packet_range": [
+      35216,
+      51264
+    ],
+    "block": 4,
+    "partition": "heldout; never fitted or used for threshold selection",
+    "label_counts": {
+      "normal": 16049
+    },
+    "advertisement_label_counts": {
+      "normal": 133
+    },
+    "note": "Same-session/device blocked holdout, not independent capture. Contiguous raw packet range with original timestamps and bytes."
+  },
+  {
+    "file": "round2_beacon-attack-block9.pcap",
+    "sha256": "e9dedd860f490faf0118b83e06049fc1d1062c4091ababc53c740be284eb13de",
+    "bytes": 5365967,
+    "source": "BeaconFlood-labelled.pcap",
+    "source_sha256": "fa756e643394e709e638b3349b34053c0a26773e3370aa8815bf79f8705d410e",
+    "source_packet_range": [
+      184928,
+      204946
+    ],
+    "block": 9,
+    "partition": "heldout; never fitted or used for threshold selection",
+    "label_counts": {
+      "normal": 18894,
+      "beacon_flood": 1125
+    },
+    "advertisement_label_counts": {
+      "beacon_flood": 1125,
+      "normal": 303
+    },
+    "note": "Same-session/device blocked holdout, not independent capture. Contiguous raw packet range with original timestamps and bytes."
+  },
+  {
+    "file": "round2_beacon-normal-block4.pcap",
+    "sha256": "5e5173f72b768688ce3b6c20d2552ae4bda72d4ffaf6fe38311009a20aa0eb0a",
+    "bytes": 6461004,
+    "source": "BeaconFlood-labelled.pcap",
+    "source_sha256": "fa756e643394e709e638b3349b34053c0a26773e3370aa8815bf79f8705d410e",
+    "source_packet_range": [
+      58818,
+      83268
+    ],
+    "block": 4,
+    "partition": "heldout; never fitted or used for threshold selection",
+    "label_counts": {
+      "normal": 24451
+    },
+    "advertisement_label_counts": {
+      "normal": 187
+    },
+    "note": "Same-session/device blocked holdout, not independent capture. Contiguous raw packet range with original timestamps and bytes."
+  }
+]

@@ -1,0 +1,11 @@
+# pip selects a compatible release for Python 3.9+.
+pandas>=2.2.3,<4
+scikit-learn>=1.5,<2
+joblib>=1.4,<2
+numpy>=1.26,<3
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+python-multipart>=0.0.20,<1
+httpx>=0.27,<1
+requests>=2.32,<3
+# PCAP extraction also requires the external tshark 4.4+ executable (not a pip package).
